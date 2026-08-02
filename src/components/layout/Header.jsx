@@ -104,7 +104,7 @@ export default function Header() {
             onClick={() => setOpen(false)}
             aria-hidden="true"
           />
-          <div className="absolute end-0 top-0 flex h-full w-[82%] max-w-sm flex-col bg-cream shadow-2xl">
+          <div className="absolute end-0 top-0 flex h-full w-[82%] max-w-sm flex-col bg-cream shadow-2xl" onClick={(e) => e.stopPropagation()}>
             <div className="flex h-16 items-center justify-between border-b border-border px-5">
               <Logo className="h-9" />
               <button
@@ -141,7 +141,7 @@ export default function Header() {
             </nav>
             <div className="mt-auto space-y-3 border-t border-border p-4">
               <div className="flex items-center justify-between px-4">
-                <LanguageSwitcher />
+                <LanguageSwitcher onAfterChange={() => setOpen(false)} />
               </div>
               <a
                 href={whatsappLink()}

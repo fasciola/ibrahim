@@ -8,7 +8,7 @@ const LANGUAGES = [
   { code: "fr", label: "Français", short: "FR" },
 ];
 
-export default function LanguageSwitcher({ className = "" }) {
+export default function LanguageSwitcher({ className = "", onAfterChange }) {
   const { locale, setLocale } = useLanguage();
   const [open, setOpen] = useState(false);
   const ref = useRef(null);
@@ -45,6 +45,7 @@ export default function LanguageSwitcher({ className = "" }) {
               onClick={() => {
                 setLocale(lang.code);
                 setOpen(false);
+                onAfterChange?.();
               }}
               className={`flex w-full items-center justify-between px-4 py-2.5 text-[14px] font-medium transition-colors hover:bg-navy/5 ${
                 lang.code === locale ? "text-navy" : "text-muted-ink"
