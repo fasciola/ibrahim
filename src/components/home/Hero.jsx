@@ -9,18 +9,21 @@ export default function Hero() {
 
   return (
     <section className="relative overflow-hidden bg-cream pt-20 lg:pt-22 min-h-[calc(100vh-80px)] flex items-center">
-      {/* Dubai Skyline Hero Background Image with Premium Overlay */}
-      <div
-        className="absolute inset-0 bg-[url('/images/dubai_skyline_hero.png')] bg-cover bg-center opacity-30 mix-blend-multiply pointer-events-none"
+      {/* Explicit Dubai Skyline Hero Background Image */}
+      <img
+        src="/images/dubai_skyline_hero.png"
+        alt="Dubai Skyline Background"
+        className="absolute inset-0 h-full w-full object-cover object-center opacity-65 pointer-events-none"
         aria-hidden="true"
       />
+      {/* Light Overlay Gradient for Readability */}
       <div
-        className="absolute inset-0 bg-gradient-to-b from-cream/90 via-cream/75 to-cream/95 pointer-events-none"
+        className="absolute inset-0 bg-gradient-to-r from-cream/95 via-cream/80 to-cream/40 pointer-events-none"
         aria-hidden="true"
       />
-      <div className="absolute right-0 top-1/4 h-[22rem] w-[22rem] rounded-full bg-radial-gold opacity-60 pointer-events-none" aria-hidden="true" />
+      <div className="absolute right-0 top-1/4 h-[22rem] w-[22rem] rounded-full bg-radial-gold opacity-50 pointer-events-none" aria-hidden="true" />
 
-      <div className="container-wide relative grid items-center gap-8 py-6 lg:py-8 lg:grid-cols-12 w-full">
+      <div className="container-wide relative grid items-center gap-8 py-6 lg:py-8 lg:grid-cols-12 w-full z-10">
         <div className="lg:col-span-7 animate-fade-rise">
           <span className="eyebrow text-xs">
             <span className="h-px w-5 bg-current opacity-60" />
@@ -36,7 +39,7 @@ export default function Hero() {
           </p>
 
           {h?.cloudKitchenCopy && (
-            <div className="mt-3 rounded-xl border border-gold/40 bg-gold/10 p-2.5 sm:p-3 text-[11px] sm:text-xs text-navy leading-snug max-w-xl">
+            <div className="mt-3 rounded-xl border border-gold/40 bg-gold/15 p-2.5 sm:p-3 text-[11px] sm:text-xs text-navy leading-snug max-w-xl backdrop-blur-sm">
               <strong>Cloud Kitchen &amp; Food Business Specialist: </strong>
               {h.cloudKitchenCopy}
             </div>
@@ -64,7 +67,7 @@ export default function Hero() {
           </div>
 
           {/* Concise Credibility Points */}
-          <div className="mt-4 flex flex-wrap items-center gap-x-4 gap-y-1.5 text-xs font-medium text-navy">
+          <div className="mt-4 flex flex-wrap items-center gap-x-4 gap-y-1.5 text-xs font-semibold text-navy">
             <span className="flex items-center gap-1.5">
               <Award className="h-3.5 w-3.5 text-gold shrink-0" />
               {h?.trustPoints?.[0] || "Former DED Experience"}
