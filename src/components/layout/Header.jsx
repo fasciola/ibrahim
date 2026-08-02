@@ -39,7 +39,7 @@ export default function Header() {
     };
   }, [open]);
 
-  const solid = !isHome || scrolled;
+  const solid = !isHome || scrolled || open;
   const isActive = (to) => (to === "/" ? pathname === "/" : pathname.startsWith(to));
 
   return (
@@ -121,6 +121,7 @@ export default function Header() {
                 <Link
                   key={link.to}
                   to={link.to}
+                  onClick={() => setOpen(false)}
                   className={`rounded-lg px-4 py-3.5 text-[16px] font-medium transition-colors focus-ring ${
                     isActive(link.to)
                       ? "bg-navy text-white"
@@ -132,6 +133,7 @@ export default function Header() {
               ))}
               <Link
                 to="/consultation"
+                onClick={() => setOpen(false)}
                 className="mt-2 inline-flex h-12 items-center justify-center rounded-full bg-gold px-5 text-[16px] font-semibold text-navy transition-colors hover:bg-gold-light focus-ring"
               >
                 {t.header.freeConsultation}
