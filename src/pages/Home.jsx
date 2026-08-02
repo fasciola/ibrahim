@@ -11,6 +11,7 @@ import AudienceSection from "@/components/home/AudienceSection";
 import SetupProcess from "@/components/home/SetupProcess";
 import VerifiedCaseStudies from "@/components/home/VerifiedCaseStudies";
 import Testimonials from "@/components/home/Testimonials";
+import ReviewProofGallery from "@/components/home/ReviewProofGallery";
 import FAQPreview from "@/components/home/FAQPreview";
 import ComplianceDisclaimer from "@/components/ui/ComplianceDisclaimer";
 import CTABanner from "@/components/ui/CTABanner";
@@ -38,6 +39,7 @@ export default function Home() {
       <SetupProcess />
       <VerifiedCaseStudies />
       <Testimonials />
+      <ReviewProofGallery />
       <FAQPreview />
       <ComplianceDisclaimer />
       <CTABanner />

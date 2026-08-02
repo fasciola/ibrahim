@@ -130,12 +130,12 @@ export default function Header() {
             <Logo className="h-10 lg:h-12" />
           </Link>
 
-          <nav className="hidden items-center gap-1 lg:flex" aria-label="Main navigation">
+          <nav className="hidden items-center gap-0.5 xl:gap-1 lg:flex" aria-label="Main navigation">
             {navLinks.map((link) => (
               <Link
                 key={link.to}
                 to={link.to}
-                className={`relative rounded-md px-3.5 py-2 text-[15px] font-medium transition-colors focus-ring ${
+                className={`relative rounded-md px-2.5 py-1.5 xl:px-3.5 xl:py-2 text-[13px] xl:text-[14px] font-medium whitespace-nowrap transition-colors focus-ring ${
                   isActive(link.to)
                     ? "text-navy"
                     : solid
@@ -145,7 +145,7 @@ export default function Header() {
               >
                 {link.label}
                 {isActive(link.to) && (
-                  <span className="absolute inset-x-3.5 -bottom-0.5 h-0.5 rounded-full bg-gold" />
+                  <span className="absolute inset-x-2 xl:inset-x-3.5 -bottom-0.5 h-0.5 rounded-full bg-gold" />
                 )}
               </Link>
             ))}

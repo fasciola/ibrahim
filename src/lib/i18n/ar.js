@@ -3,7 +3,7 @@ export const ar = {
   dir: "rtl",
   nav: {
     home: "الرئيسية",
-    dubaiMainland: "تأسيس شركات دبي بر رئيسي",
+    dubaiMainland: "دبي البر الرئيسي",
     cloudKitchens: "المطابخ السحابية",
     services: "الخدمات",
     about: "عن إبراهيم",
@@ -401,6 +401,11 @@ export const ar = {
         rating: 5,
       },
     ],
+  },
+  reviewProof: {
+    eyebrow: "إثباتات مراجعات وآراء العملاء",
+    title: "مراجعات حقيقية وتوثيق المحادثات",
+    subtitle: "اضغط على أي صورة لعرض إثبات مراجعات ورسائل العملاء بالحجم الكامل.",
   },
   faqPreview: {
     eyebrow: "الأسئلة الشائعة",

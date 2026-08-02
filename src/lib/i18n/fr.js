@@ -402,6 +402,11 @@ export const fr = {
       },
     ],
   },
+  reviewProof: {
+    eyebrow: "AVIS CLIENTS VÉRIFIÉS",
+    title: "Avis clients réels et preuves de messages",
+    subtitle: "Cliquez sur une capture d'écran pour l'agrandir et lire les retours clients.",
+  },
   faqPreview: {
     eyebrow: "FAQ",
     title: "Questions fréquentes",

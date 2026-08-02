@@ -415,6 +415,11 @@ export const en = {
       },
     ],
   },
+  reviewProof: {
+    eyebrow: "VERIFIED CLIENT FEEDBACK",
+    title: "Real Client Reviews & Messaging Proofs",
+    subtitle: "Click any review screenshot to enlarge and read authentic client feedback.",
+  },
   faqPreview: {
     eyebrow: "FAQ",
     title: "Frequently Asked Questions",
