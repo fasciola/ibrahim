@@ -403,9 +403,9 @@ export const fr = {
     ],
   },
   reviewProof: {
-    eyebrow: "AVIS CLIENTS VÉRIFIÉS",
-    title: "Avis clients réels et preuves de messages",
-    subtitle: "Cliquez sur une capture d'écran pour l'agrandir et lire les retours clients.",
+    eyebrow: "AVIS GOOGLE VÉRIFIÉS",
+    title: "Avis Google & Retours Clients",
+    subtitle: "Cliquez sur une capture d'écran d'un avis Google pour l'agrandir en plein écran.",
   },
   faqPreview: {
     eyebrow: "FAQ",

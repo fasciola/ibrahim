@@ -416,9 +416,9 @@ export const en = {
     ],
   },
   reviewProof: {
-    eyebrow: "VERIFIED CLIENT FEEDBACK",
-    title: "Real Client Reviews & Messaging Proofs",
-    subtitle: "Click any review screenshot to enlarge and read authentic client feedback.",
+    eyebrow: "VERIFIED GOOGLE REVIEWS",
+    title: "Google Reviews & Client Feedback",
+    subtitle: "Click any Google Review screenshot to enlarge and read authentic client feedback in full size.",
   },
   faqPreview: {
     eyebrow: "FAQ",

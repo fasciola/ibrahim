@@ -1,74 +1,26 @@
 import { useState } from "react";
-import { ZoomIn, X, ChevronLeft, ChevronRight, CheckCircle2, ExternalLink, Maximize2 } from "lucide-react";
+import { ZoomIn, X, ChevronLeft, ChevronRight, CheckCircle2, ExternalLink, Maximize2, Star } from "lucide-react";
 import { useLanguage } from "@/lib/i18n/LanguageContext";
 
-const REVIEW_IMAGES = [
-  {
-    src: "/images/review/Screenshot 2026-08-02 172138.jpg",
-    title: "Client Feedback Proof 1",
-    tag: "WhatsApp"
-  },
-  {
-    src: "/images/review/Screenshot 2026-08-02 172209.jpg",
-    title: "Client Feedback Proof 2",
-    tag: "Google Review"
-  },
-  {
-    src: "/images/review/Screenshot 2026-08-02 172228.jpg",
-    title: "Client Feedback Proof 3",
-    tag: "WhatsApp"
-  },
-  {
-    src: "/images/review/Screenshot 2026-08-02 172248.jpg",
-    title: "Client Feedback Proof 4",
-    tag: "WhatsApp"
-  },
-  {
-    src: "/images/review/Screenshot 2026-08-02 172309.jpg",
-    title: "Client Feedback Proof 5",
-    tag: "Review"
-  },
-  {
-    src: "/images/review/Screenshot 2026-08-02 172326.jpg",
-    title: "Client Feedback Proof 6",
-    tag: "WhatsApp"
-  },
-  {
-    src: "/images/review/Screenshot 2026-08-02 172348.jpg",
-    title: "Client Feedback Proof 7",
-    tag: "Email Feedback"
-  },
-  {
-    src: "/images/review/Screenshot 2026-08-02 172407.jpg",
-    title: "Client Feedback Proof 8",
-    tag: "WhatsApp"
-  },
-  {
-    src: "/images/review/Screenshot 2026-08-02 172427.jpg",
-    title: "Client Feedback Proof 9",
-    tag: "Google Review"
-  },
-  {
-    src: "/images/review/Screenshot 2026-08-02 172444.jpg",
-    title: "Client Feedback Proof 10",
-    tag: "WhatsApp"
-  },
-  {
-    src: "/images/review/Screenshot 2026-08-02 172501.jpg",
-    title: "Client Feedback Proof 11",
-    tag: "WhatsApp"
-  },
-  {
-    src: "/images/review/Screenshot 2026-08-02 172514.jpg",
-    title: "Client Feedback Proof 12",
-    tag: "Review"
-  },
-  {
-    src: "/images/review/Screenshot 2026-08-02 172614.jpg",
-    title: "Client Feedback Proof 13",
-    tag: "WhatsApp"
-  }
-];
+const REVIEW_IMAGES = Array.from({ length: 13 }, (_, i) => ({
+  src: [
+    "/images/review/Screenshot 2026-08-02 172138.jpg",
+    "/images/review/Screenshot 2026-08-02 172209.jpg",
+    "/images/review/Screenshot 2026-08-02 172228.jpg",
+    "/images/review/Screenshot 2026-08-02 172248.jpg",
+    "/images/review/Screenshot 2026-08-02 172309.jpg",
+    "/images/review/Screenshot 2026-08-02 172326.jpg",
+    "/images/review/Screenshot 2026-08-02 172348.jpg",
+    "/images/review/Screenshot 2026-08-02 172407.jpg",
+    "/images/review/Screenshot 2026-08-02 172427.jpg",
+    "/images/review/Screenshot 2026-08-02 172444.jpg",
+    "/images/review/Screenshot 2026-08-02 172501.jpg",
+    "/images/review/Screenshot 2026-08-02 172514.jpg",
+    "/images/review/Screenshot 2026-08-02 172614.jpg",
+  ][i],
+  title: `Google Review ${i + 1}`,
+  tag: "Google Review",
+}));
 
 export default function ReviewProofGallery() {
   const { t } = useLanguage();
@@ -76,9 +28,9 @@ export default function ReviewProofGallery() {
   const [isZoomed, setIsZoomed] = useState(false);
 
   const rp = t.reviewProof || {
-    eyebrow: "VERIFIED CLIENT FEEDBACK",
-    title: "Real Client Reviews & Messaging Proofs",
-    subtitle: "Click any review screenshot to enlarge and read authentic client feedback in full size."
+    eyebrow: "VERIFIED GOOGLE REVIEWS",
+    title: "Google Reviews & Client Feedback",
+    subtitle: "Click any Google Review screenshot to enlarge and read authentic client feedback in full size."
   };
 
   const handlePrev = (e) => {
@@ -98,7 +50,7 @@ export default function ReviewProofGallery() {
       <div className="container-wide">
         <div className="mx-auto max-w-3xl text-center">
           <span className="eyebrow flex items-center justify-center gap-2">
-            <CheckCircle2 className="h-4 w-4 text-gold" />
+            <Star className="h-4 w-4 fill-gold text-gold" />
             {rp.eyebrow}
           </span>
           <h2 className="heading-lg mt-3 text-navy font-heading font-bold">
@@ -124,7 +76,7 @@ export default function ReviewProofGallery() {
               <div className="relative flex w-full items-center justify-center overflow-hidden rounded-xl bg-slate-100 dark:bg-slate-900/50 p-1 min-h-[220px]">
                 <img
                   src={img.src}
-                  alt={`Verified Client Review Proof ${idx + 1}`}
+                  alt={`Google Review ${idx + 1}`}
                   className="w-full h-auto max-h-[380px] object-contain transition-transform duration-500 group-hover:scale-102"
                   loading="lazy"
                 />
@@ -142,11 +94,12 @@ export default function ReviewProofGallery() {
 
               {/* Card Footer Tag */}
               <div className="mt-3 flex items-center justify-between border-t border-border/60 pt-2.5 px-1">
-                <span className="text-xs font-semibold text-navy">
-                  Proof {idx + 1}
+                <span className="text-xs font-bold text-navy flex items-center gap-1">
+                  <Star className="h-3.5 w-3.5 fill-gold text-gold" />
+                  Google Review {idx + 1}
                 </span>
                 <span className="rounded-full bg-gold/15 px-2.5 py-0.5 text-[11px] font-bold text-navy">
-                  {img.tag}
+                  Google
                 </span>
               </div>
             </div>
@@ -166,11 +119,12 @@ export default function ReviewProofGallery() {
             onClick={(e) => e.stopPropagation()}
           >
             <div className="flex items-center gap-2">
-              <span className="font-heading font-bold text-base text-gold">
-                Review Proof {selectedIdx + 1} of {REVIEW_IMAGES.length}
+              <span className="font-heading font-bold text-base text-gold flex items-center gap-1.5">
+                <Star className="h-4 w-4 fill-gold text-gold" />
+                Google Review {selectedIdx + 1} of {REVIEW_IMAGES.length}
               </span>
               <span className="rounded-full bg-gold/20 px-3 py-0.5 text-xs font-bold text-white">
-                {REVIEW_IMAGES[selectedIdx].tag}
+                Google Review
               </span>
             </div>
 
@@ -236,7 +190,7 @@ export default function ReviewProofGallery() {
           >
             <img
               src={REVIEW_IMAGES[selectedIdx].src}
-              alt={`Full size client review proof ${selectedIdx + 1}`}
+              alt={`Full size Google Review ${selectedIdx + 1}`}
               className={`rounded-xl border border-white/20 bg-card shadow-2xl transition-all duration-300 ${
                 isZoomed
                   ? "w-auto max-w-none h-auto"
@@ -250,7 +204,7 @@ export default function ReviewProofGallery() {
             className="w-full max-w-5xl flex items-center justify-between z-[360] pt-2 text-xs text-slate-300"
             onClick={(e) => e.stopPropagation()}
           >
-            <span>Verified Authentic Feedback Proof • Ibrahim Setup</span>
+            <span>Verified Authentic Google Review • Ibrahim Setup</span>
             <a
               href={REVIEW_IMAGES[selectedIdx].src}
               target="_blank"
