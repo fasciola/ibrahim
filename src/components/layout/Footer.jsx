@@ -11,8 +11,10 @@ export default function Footer() {
 
   const navLinks = [
     { label: t.nav.home, to: "/" },
-    { label: t.nav.about, to: "/about" },
+    { label: t.nav.dubaiMainland || "Dubai Mainland", to: "/services/dubai-mainland-company-formation" },
+    { label: t.nav.cloudKitchens || "Cloud Kitchens", to: "/services/cloud-kitchen-setup" },
     { label: t.nav.services, to: "/services" },
+    { label: t.nav.about, to: "/about" },
     { label: t.nav.faq, to: "/faq" },
     { label: t.nav.contact, to: "/contact" },
   ];

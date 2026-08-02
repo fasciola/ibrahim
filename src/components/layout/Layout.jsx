@@ -2,6 +2,7 @@ import { Outlet } from "react-router-dom";
 import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
 import WhatsAppButton from "@/components/layout/WhatsAppButton";
+import StickyWhatsApp from "@/components/layout/StickyWhatsApp";
 import { useLanguage } from "@/lib/i18n/LanguageContext";
 
 export default function Layout() {
@@ -20,6 +21,7 @@ export default function Layout() {
       </main>
       <Footer />
       <WhatsAppButton />
+      <StickyWhatsApp />
     </div>
   );
 }

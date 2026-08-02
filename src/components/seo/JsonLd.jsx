@@ -6,8 +6,6 @@ import { useEffect } from "react";
  * rather than accumulating duplicate blocks.
  */
 export default function JsonLd({ id, data }) {
-  // Serialise up front so an inline object literal from the caller does not
-  // re-trigger the effect on every render.
   const json = data ? JSON.stringify(data) : null;
 
   useEffect(() => {
@@ -36,4 +34,33 @@ export const faqPageSchema = (faqs) => ({
     name: question,
     acceptedAnswer: { "@type": "Answer", text: answer },
   })),
+});
+
+export const professionalServiceSchema = () => ({
+  "@context": "https://schema.org",
+  "@type": "ProfessionalService",
+  name: "Ibrahim Setup",
+  description: "Dubai Mainland Business Setup Specialist & Food Business Licensing Consultancy.",
+  url: "https://ibrahim.faisalmousa86.workers.dev",
+  address: {
+    "@type": "PostalAddress",
+    addressLocality: "Dubai",
+    addressCountry: "AE"
+  },
+  founder: {
+    "@type": "Person",
+    name: "Ibrahim Mohamed Ali Ibrahim Idris",
+    jobTitle: "Dubai Mainland Business Setup Specialist & CEO of Cloud Kitchen Setup",
+    worksFor: [
+      {
+        "@type": "Organization",
+        name: "Ibrahim Setup"
+      },
+      {
+        "@type": "Organization",
+        name: "Cloud Kitchen Setup - CKS",
+        url: "https://cloudkitchensetup.com"
+      }
+    ]
+  }
 });

@@ -3,126 +3,403 @@ export const fr = {
   dir: "ltr",
   nav: {
     home: "Accueil",
-    about: "À propos",
+    dubaiMainland: "Dubai Mainland",
+    cloudKitchens: "Cloud Kitchens",
     services: "Services",
+    about: "À propos d'Ibrahim",
+    process: "Procédure",
     faq: "FAQ",
     contact: "Contact",
+    bookConsultation: "Prendre rendez-vous",
   },
   header: {
-    freeConsultation: "Consultation gratuite",
+    freeConsultation: "Prendre rendez-vous",
     openMenu: "Ouvrir le menu",
     closeMenu: "Fermer le menu",
     chatWhatsApp: "Discuter sur WhatsApp",
   },
   hero: {
-    eyebrow: "Expert en création d'entreprise aux EAU",
-    title: "Lancez votre entreprise aux EAU en toute fluidité",
+    eyebrow: "SPÉCIALISTE CRÉATION D'ENTREPRISE DUBAI MAINLAND",
+    title: "Créez votre société Dubai Mainland avec un expert du système",
     description:
-      "Avec plus de cinq ans d'expérience spécialisée dans la création d'entreprises aux EAU, j'accompagne les entrepreneurs et les investisseurs à chaque étape\u2014du choix de la juridiction appropriée à l'obtention des licences, des visas, de l'enregistrement fiscal et du support bancaire pour entreprises.",
-    tags: ["Création d'entreprise", "Zone franche", "Mainland", "Dubai DET", "Licence professionnelle"],
-    bookConsultation: "Réservez votre consultation gratuite",
-    exploreServices: "Explorer les services",
-    personalGuidance: "Accompagnement personnalisé",
-    clearProcess: "Processus clair",
-    promptResponse: "Réponse rapide",
-    companiesSupported: "Entreprises accompagnées",
-    yearsExperience: "Ans d'expérience aux EAU",
+      "Créez votre entreprise Dubai Mainland avec les conseils pratiques d'Ibrahim, spécialiste de la création d'entreprises fort d'une expérience préalable dans les services de licences du département économique de Dubaï. Du choix de l'activité au visa et au compte bancaire, chaque étape est gérée en toute transparence.",
+    cloudKitchenCopy:
+      "En tant que propriétaire et PDG de Cloud Kitchen Setup (CKS), Ibrahim propose également un accompagnement spécialisé pour les cloud kitchens, restaurants et concepts alimentaires.",
+    trustPoints: [
+      "Expérience DED préalable",
+      "Spécialiste Dubai Mainland",
+      "PDG de Cloud Kitchen Setup",
+    ],
+    bookConsultation: "Réserver une consultation Mainland",
+    exploreCKS: "Découvrir Cloud Kitchen Setup",
+    cksUrl: "https://cloudkitchensetup.com/",
   },
-  stats: [
-    { value: 5, suffix: "+", label: "Ans d'expérience" },
-    { value: 500, suffix: "+", label: "Entreprises créées" },
-    { value: 100, suffix: "%", label: "Engagement envers le client" },
-    { value: 24, suffix: "h", label: "Temps de réponse moyen" },
-  ],
-  aboutPreview: {
-    eyebrow: "Pourquoi collaborer avec moi",
-    title: "Connaissance interne. Décisions plus claires. Progrès plus rapide.",
-    p1: "Mon expérience professionnelle au Département de l'Économie et du Tourisme de Dubaï m'offre une vision précieuse des procédures gouvernementales, des standards de documentation, des exigences de licence et des défis pratiques auxquels les entrepreneurs font face en entrant sur le marché émirati.",
-    p2: "J'utilise cette expérience pour aider les clients à bien se préparer, à choisir une juridiction appropriée, à éviter les erreurs courantes et à réduire les retards évitables tout au long du processus de création.",
-    tags: ["Création Mainland", "Création Zone Franche", "Visas Investisseur", "Support Bancaire Entreprise", "Impôts des Sociétés", "Procédures Gouvernementales"],
-    learnMore: "En savoir plus sur Ibrahim",
+  expertiseStrip: {
+    items: [
+      {
+        title: "Dubai Mainland",
+        desc: "Spécialiste de la création de licence et société",
+      },
+      {
+        title: "Expérience DED préalable",
+        desc: "Compréhension pratique des procédures de licence",
+      },
+      {
+        title: "Spécialiste Cloud Kitchen",
+        desc: "Lancement de cuisines et projets alimentaires",
+      },
+      {
+        title: "Expérience entrepreneuriale",
+        desc: "Propriétaire et PDG de CKS",
+      },
+    ],
   },
-  recognition: {
-    eyebrow: "Économie et Tourisme de Dubaï",
-    title: "Reconnaissance officielle",
-    p1: "Reconnaissance \u00AB Performance exceptionnelle \u00BB décernée à Ibrahim Mohamed Ali Ibrahim Idris en mars 2025.",
-    p2: "Un parcours professionnel reconnu par une institution gouvernementale, reflétant l'engagement d'Ibrahim envers la qualité du service, la précision, la réactivité et le professionnalisme.",
-    disclaimer: "Ibrahim Setup est un cabinet de conseil indépendant et n'est pas une entité gouvernementale ni un représentant officiel de l'Économie et du Tourisme de Dubaï.",
+  mainlandExpertise: {
+    title: "Le Mainland à Dubaï est l'expertise phare d'Ibrahim",
+    p1: "Les sociétés Dubai Mainland peuvent commercer dans tous les Émirats, traiter avec les secteurs public et privé, et disposer de locaux physiques. La structure appropriée dépend des activités choisies et du modèle opérationnel.",
+    p2: "Ibrahim aide les entrepreneurs à comprendre ces exigences avant tout engagement financier, évitant ainsi les erreurs de dossier et les retards.",
+    cta: "Discuter de votre projet Mainland",
+    cards: [
+      {
+        title: "Sélection des activités",
+        desc: "Identification et correspondance des activités commerciales ou professionnelles exactes.",
+      },
+      {
+        title: "Réservation du nom commercial",
+        desc: "Conseils sur le choix et la conformité du nom commercial à Dubaï.",
+      },
+      {
+        title: "Approbation initiale",
+        desc: "Préparation et soumission des demandes pour l'accord préalable.",
+      },
+      {
+        title: "Choix de la forme juridique",
+        desc: "Orientation entre entreprise individuelle, LLC ou succursale.",
+      },
+      {
+        title: "Documentation et statuts",
+        desc: "Coordination des MOA, LSA et légalisations requises.",
+      },
+      {
+        title: "Émission de licence commercial",
+        desc: "Suivi étape par étape jusqu'à la délivrance de la licence finale.",
+      },
+      {
+        title: "Bail et enregistrement Ejari",
+        desc: "Assistance pour la vérification des baux commerciaux et Ejari.",
+      },
+      {
+        title: "Approbations externes",
+        desc: "Coordination avec la municipalité de Dubaï, RTA, DHA et la Défense Civile.",
+      },
+      {
+        title: "Carte d'établissement",
+        desc: "Demande de carte d'établissement et dossiers d'immigration.",
+      },
+      {
+        title: "Visas d'investisseur et d'employés",
+        desc: "Conseils et démarches pour visas de résidence et d'investisseur.",
+      },
+      {
+        title: "Assistance compte bancaire",
+        desc: "Préparation du dossier bancaire et alignement avec la conformité.",
+      },
+      {
+        title: "Modifications et renouvellements",
+        desc: "Support continu pour ajouts d'activités et renouvellements annuels.",
+      },
+    ],
   },
-  ecosystem: {
-    eyebrow: "Système intégré",
-    title: "Un écosystème complet de création d'entreprise aux EAU",
-    intro: "De la planification initiale à la conformité post-création, chaque étape est coordonnée par un processus clair et personnalisé.",
+  formerDED: {
+    heading: "Perspective pratique issue de l'expérience DED préalable",
+    p1: "L'expérience professionnelle antérieure d'Ibrahim au sein de l'environnement des licences économiques à Dubaï lui a apporté une exposition directe aux défis procéduraux des entrepreneurs.",
+    p2: "Aujourd'hui, il applique cette compréhension pratique pour aider les clients à préparer leurs dossiers avec précision et confiance.",
+    disclaimer:
+      "Ibrahim Setup est un cabinet de conseil indépendant et n'est ni une autorité gouvernementale ni un représentant officiel du Department of Economy and Tourism (DET) de Dubaï.",
+    logoBadgeText:
+      "Expérience professionnelle préalable au département économique de Dubaï",
+  },
+  cloudKitchen: {
+    heading: "Création spécialisée de Cloud Kitchens et projets alimentaires",
+    subtitle: "Inspiré d'une expérience opérationnelle réelle",
+    p1: "Ibrahim est propriétaire et PDG de Cloud Kitchen Setup (CKS), une plateforme dédiée au lancement de cuisines virtuelles et de concepts de livraison à Dubaï.",
+    p2: "Les clients bénéficient d'un soutien complet couvrant la licence commerciale et les exigences techniques alimentaires.",
+    ledBy: "Fondé et dirigé par Ibrahim",
+    visitCKS: "Visiter Cloud Kitchen Setup",
+    bookConsultation: "Réserver une consultation Cloud Kitchen",
+    cards: [
+      {
+        title: "Modèle économique Cloud Kitchen",
+        desc: "Étude de faisabilité, rayon de livraison et modèles de cuisines partagées.",
+      },
+      {
+        title: "Choix des activités alimentaires",
+        desc: "Sélection des activités approuvées par la municipalité de Dubaï.",
+      },
+      {
+        title: "Licence commerciale alimentaire",
+        desc: "Coordination complète pour l'obtention de la licence alimentaire.",
+      },
+      {
+        title: "Critères de locaux",
+        desc: "Sélection des espaces de cuisine conformes aux normes d'extraction et de puissance.",
+      },
+      {
+        title: "Sécurité alimentaire et approbations",
+        desc: "Accompagnement sur les normes de la sécurité alimentaire et Défense Civile.",
+      },
+      {
+        title: "Aménagement opérationnel de cuisine",
+        desc: "Recommandations d'agencement selon la réglementation sanitaire.",
+      },
+      {
+        title: "Intégration plateformes de livraison",
+        desc: "Préparation des dossiers pour Talabat, Deliveroo, Careem et Noon.",
+      },
+      {
+        title: "Branding et lancement",
+        desc: "Conseils stratégiques pour le positionnement des marques virtuelles.",
+      },
+    ],
+  },
+  aboutAuthority: {
+    heading: "Connaissance des procédures. Expérience de dirigeant.",
+    p1: "Ibrahim est spécialisé dans l'accompagnement des entrepreneurs à Dubaï. Son expérience préalable au sein des services de licence économique offre une vision claire des structures et exigences juridiques.",
+    p2: "Son expertise est renforcée par son rôle de fondateur et PDG de Cloud Kitchen Setup, offrant une double perspective précieuse : maîtriser le processus administratif et gérer une entreprise réelle.",
+    profileName: "Ibrahim Mohamed Ali Ibrahim Idris",
+    profileRole: "Spécialiste création d'entreprise Dubai Mainland",
+    profileTag1: "Fondateur & PDG — Cloud Kitchen Setup (CKS)",
+    profileTag2: "Expérience préalable licences DED",
+  },
+  audience: {
+    heading: "Accompagnement ciblé pour les entrepreneurs à Dubaï",
+    cards: [
+      {
+        title: "Entrepreneurs Mainland",
+        desc: "Fondateurs souhaitant un accès complet au marché émirati et contrats publics.",
+      },
+      {
+        title: "Fondateurs de restaurants",
+        desc: "Projets de restauration nécessitant licences et accords municipaux.",
+      },
+      {
+        title: "Opérateurs Cloud Kitchen",
+        desc: "Marques de livraison s'implantant dans des cuisines professionnelles.",
+      },
+      {
+        title: "Investisseurs internationaux",
+        desc: "Investisseurs étrangers cherchant une entrée conforme avec 100% de propriété.",
+      },
+      {
+        title: "Entreprises existantes",
+        desc: "Entreprises modifiant leurs activités ou leur structure sociale.",
+      },
+      {
+        title: "Demandeurs de visas & comptes",
+        desc: "Entrepreneurs recherchant des visas de résidence et ouverture de compte bancaire.",
+      },
+    ],
+  },
+  setupProcess: {
+    heading: "Votre parcours de création Dubai Mainland",
+    foodCallout:
+      "Vous lancez un projet alimentaire ? Ibrahim vous accompagne via CKS.",
     steps: [
-      { num: "01", title: "Consultation et planification", description: "Comprendre votre modèle d'affaires, votre marché cible, vos besoins en propriété, votre budget, vos besoins de visa et votre calendrier préféré." },
-      { num: "02", title: "Création et licence", description: "Choisir la juridiction, la forme juridique, les activités, le nom commercial, les approbations et la structure de licence appropriés." },
-      { num: "03", title: "Services de visa", description: "Coordonner les demandes de visa investisseur, associé, employé, dépendant et résidence longue durée éligibles." },
-      { num: "04", title: "Support bancaire et fiscal", description: "Assister dans la préparation du compte bancaire d'entreprise, l'enregistrement de l'impôt des sociétés et l'enregistrement TVA le cas échéant." },
-      { num: "05", title: "Support continu", description: "Soutenir les renouvellements de licence, les modifications, les services PRO, les exigences de conformité et les changements opérationnels." },
+      {
+        num: "01",
+        title: "Consultation",
+        desc: "Analyse du projet et de la structure de propriété.",
+      },
+      {
+        num: "02",
+        title: "Choix des activités",
+        desc: "Sélection des activités et de la forme juridique.",
+      },
+      {
+        num: "03",
+        title: "Nom & accord préalable",
+        desc: "Réservation du nom commercial et demande d'accord initial.",
+      },
+      {
+        num: "04",
+        title: "Documents & locaux",
+        desc: "Rédaction des statuts (MOA) et contrat Ejari.",
+      },
+      {
+        num: "05",
+        title: "Approbations externes",
+        desc: "Coordination avec les organismes de régulation.",
+      },
+      {
+        num: "06",
+        title: "Émission de la licence",
+        desc: "Finalisation de la licence commerciale.",
+      },
+      {
+        num: "07",
+        title: "Visas & immigration",
+        desc: "Demandes de carte d'établissement et visas de résidence.",
+      },
+      {
+        num: "08",
+        title: "Accompagnement lancement",
+        desc: "Assistance ouverture compte bancaire et démarrage.",
+      },
     ],
   },
-  jurisdictions: {
-    eyebrow: "Où nous immatriculons les sociétés",
-    title: "Création d'entreprise dans les sept émirats",
-    intro:
-      "L'émirat et le type de licence adaptés dépendent de votre activité, de vos clients, de vos besoins en bureau et de votre budget. Voici comment se comparent les principales options.",
-    types: [
+  caseStudies: {
+    heading: "Projets concrets et réalisations",
+    disclaimer: "Structures prêtes à être alimentées par des études de cas vérifiées.",
+    items: [
       {
-        name: "Création d'entreprise Mainland",
-        description:
-          "Immatriculée auprès du département économique de l'émirat (comme Dubai DET ou ADDED à Abu Dhabi). Vous permet de commercer directement sur tout le marché des EAU et de soumissionner aux marchés publics, avec une propriété étrangère à 100% possible sur la plupart des activités.",
+        title: "Licence professionnelle Dubai Mainland",
+        challenge: "Combinaison d'activités complexes et exigences de service.",
+        approach: "Cartographie claire des activités et coordination des statuts.",
+        result: "Licence émise avec 100% de propriété étrangère.",
       },
       {
-        name: "Création en zone franche",
-        description:
-          "Immatriculée dans l'une des plus de 40 zones franches des EAU. Propriété étrangère intégrale, immatriculation simplifiée et formules combinant licence commerciale, bureau flexible et quota de visas — idéal pour les activités de services, de négoce et de holding.",
+        title: "Création d'une Cloud Kitchen",
+        challenge: "Conformité de l'emplacement aux normes de la municipalité.",
+        approach: "Plan intégré couvrant la licence Mainland et les permis sanitaires.",
+        result: "Cuisine opérationnelle et intégrée sur les plateformes de livraison.",
       },
       {
-        name: "Société offshore",
-        description:
-          "Une structure non résidente utilisée pour la détention d'actifs, le commerce international et la structuration de groupe. Aucun visa de résidence EAU n'est délivré sur la base d'une licence offshore.",
+        title: "Modification de licence Mainland",
+        challenge: "Restructuration des activités sans interruption d'exploitation.",
+        approach: "Dépôt structuré des amendements auprès des autorités.",
+        result: "Licence mise à jour avec ajout de nouvelles activités.",
       },
-    ],
-    emiratesLabel: "Émirats couverts",
-    emirates: [
-      "Dubaï",
-      "Abu Dhabi",
-      "Charjah",
-      "Ras al-Khaïmah",
-      "Ajman",
-      "Foujaïrah",
-      "Oumm al-Qaïwaïn",
     ],
   },
   servicesPreview: {
-    eyebrow: "Services",
-    title: "Tout ce dont votre entreprise EAU a besoin",
-    intro: "Assistance pratique et de bout en bout pour créer, exploiter et développer votre entreprise aux EAU.",
+    eyebrow: "Hiérarchie des Services",
+    title: "Services spécialisés à Dubaï",
+    intro:
+      "La création Dubai Mainland et les Cloud Kitchens sont nos services prioritaires.",
     viewAll: "Voir tous les services",
     learnMore: "En savoir plus",
     cards: [
-      { title: "Création d'entreprise", description: "Création d'entreprises mainland, zone franche et offshore alignée avec vos activités, besoins de propriété, stratégie de marché et budget.", included: ["Création LLC Mainland", "Enregistrement Zone Franche", "Création Offshore"] },
-      { title: "Services de visa", description: "Accompagnement complet pour les visas de résidence, investisseur, emploi, associé et famille éligibles.", included: ["Support Visa Doré EAU", "Visas Investisseur et Associé", "Visas Emploi et Famille"] },
-      { title: "Comptes et impôts", description: "Préparation bancaire d'entreprise avec assistance à l'enregistrement de l'impôt des sociétés et de la TVA.", included: ["Support Compte Bancaire Entreprise", "Enregistrement Impôt des Sociétés", "Enregistrement TVA"] },
-      { title: "Juridique et conseil", description: "Assistance pratique avec les documents d'entreprise, les accords, les demandes de marque et la structuration d'entreprise.", included: ["Conseil en propriété et structuration", "Coordination MOA et LSA", "Support d'enregistrement de marque"] },
-      { title: "Support continu", description: "Support post-création qui maintient vos dossiers d'entreprise, renouvellements et exigences gouvernementales organisés.", included: ["Renouvellements de licence", "Services PRO", "Solutions d'espace de bureau"] },
-      { title: "Service de création prioritaire", description: "Assistance prioritaire coordonnée pour les entrepreneurs travaillant avec des calendriers de lancement exigeants.", included: ["Coordination de demande prioritaire", "Point de contact dédié", "Suivi de documents sensibles au temps"] },
+      {
+        title: "Création de société Dubai Mainland",
+        description:
+          "Accompagnement complet pour créer une LLC, entreprise individuelle ou succursale à Dubaï.",
+        included: [
+          "Choix d'activité & nom commercial",
+          "Accord préalable & statuts",
+          "Licence commerciale & Ejari",
+        ],
+        link: "/services/dubai-mainland-company-formation",
+        featured: true,
+      },
+      {
+        title: "Création de Cloud Kitchen & Projets Alimentaires",
+        description:
+          "Support spécialisé pour cuisines virtuelles dirigé par le PDG de CKS.",
+        included: [
+          "Licences alimentaires à Dubaï",
+          "Approbations municipalité et hygiène",
+          "Aide au lancement sur plateformes",
+        ],
+        link: "/services/cloud-kitchen-setup",
+        featured: true,
+      },
+      {
+        title: "Création de Restaurant & Alimentation",
+        description:
+          "Licences et permis pour restaurants physiques, cafés et concepts de restauration.",
+        included: [
+          "Licence commerciale restaurant",
+          "Approbation sécurité alimentaire",
+          "Vérification des critères de locaux",
+        ],
+        link: "/services/restaurant-food-business-setup",
+      },
+      {
+        title: "Visas d'investisseur & résidence",
+        description:
+          "Conseils pour visas d'investisseur, associés, employés et familles.",
+        included: [
+          "Visas de résidence investisseur",
+          "Carte d'établissement",
+          "Support Golden Visa",
+        ],
+        link: "/services/investor-visa",
+      },
+      {
+        title: "Assistance compte bancaire professionnel",
+        description:
+          "Préparation du dossier bancaire et mise en relation avec des établissements adaptés.",
+        included: [
+          "Préparation du dossier de banque",
+          "Alignement conformité KYC",
+          "Assistance rendez-vous bancaires",
+        ],
+        link: "/services/business-bank-account",
+      },
+      {
+        title: "Coordination approbations externes",
+        description:
+          "Gestion des accords auprès de la municipalité, RTA, DHA et Défense Civile.",
+        included: [
+          "Vérification des exigences",
+          "Préparation des formulaires",
+          "Suivi auprès des autorités",
+        ],
+      },
+      {
+        title: "Amendements & renouvellements",
+        description:
+          "Service PRO pour renouvellement annuel de licence et modification d’activités.",
+        included: [
+          "Renouvellement annuel de licence",
+          "Modification d'activités",
+          "Transferts de parts social",
+        ],
+      },
+      {
+        title: "Création en Zone Franche (Free Zone)",
+        description:
+          "Orientation secondaire pour le choix et la création dans les zones franches des Émirats.",
+        included: [
+          "Comparatif des zones franches",
+          "Forfaits licences et bureaux",
+        ],
+      },
+      {
+        title: "Fiscalité & assistance fiscale",
+        description: "Assistance pour l'immatriculation à l'impôt sur les sociétés et à la TVA.",
+        included: [
+          "Immatriculation impôt sociétés",
+          "Immatriculation TVA",
+        ],
+      },
     ],
   },
-  personalConsultant: {
-    eyebrow: "Consultant personnel",
-    title: "Travaillez directement avec un consultant expérimenté en création d'entreprise aux EAU",
-    description: "Vous ne serez pas transmis entre plusieurs départements ni laissé sans mises à jour claires. Ibrahim fournit un point de contact direct tout au long du parcours de création, vous aidant à comprendre les options disponibles, les documents requis, les coûts attendus et les prochaines étapes.",
-    checklist: ["Comparaison de juridictions personnalisée", "Explication claire des coûts et exigences", "Communication directe et mises à jour régulières", "Guidance de préparation de documents", "Support avant et après l'émission de licence"],
-    cta: "Discutez de votre plan d'affaires",
-  },
   testimonials: {
-    eyebrow: "Expériences clients",
-    title: "Ce que disent les clients",
+    eyebrow: "Témoignages",
+    title: "Ce que disent nos clients",
     items: [
-      { quote: "Ce fut un plaisir de travailler avec vous. J'apprécie vraiment votre soutien bienveillant, vos connaissances professionnelles, vos réponses rapides et votre action à tout moment.", name: "Témoignage client", source: "Via WhatsApp", rating: 5 },
-      { quote: "Merci pour le haut niveau de professionnalisme affiché durant nos discussions. Recevoir les documents de mon entreprise constituée a été une excellente expérience.", name: "Vaughn", source: "Via Email", rating: 5 },
-      { quote: "Ibrahim a été une aide formidable dès le départ. Il a répondu à toutes mes questions et a aidé à compléter les processus requis en 24 heures.", name: "George M. J.", source: "Via Google Review", rating: 5 },
+      {
+        quote:
+          "Ce fut un plaisir de travailler avec vous. J'apprécie vraiment votre soutien bienveillant et votre réactivité.",
+        name: "Témoignage client",
+        source: "Via WhatsApp",
+        rating: 5,
+      },
+      {
+        quote:
+          "Merci pour le grand professionnalisme dont vous avez fait preuve. Recevoir les documents de ma société a été une excellente expérience.",
+        name: "Vaughn",
+        source: "Via Email",
+        rating: 5,
+      },
+      {
+        quote:
+          "Ibrahim a été d'une aide fantastique dès le début. Il a répondu à toutes mes questions avec efficacité.",
+        name: "George M. J.",
+        source: "Via Google Review",
+        rating: 5,
+      },
     ],
   },
   faqPreview: {
@@ -131,33 +408,68 @@ export const fr = {
     viewAll: "Voir toutes les questions fréquentes",
   },
   faqs: [
-    { question: "Dois-je choisir une entreprise mainland ou zone franche ?", answer: "Le bon choix dépend de vos activités, de vos clients cibles, de vos besoins en bureau, en visa, de votre structure de propriété et de votre budget. Le processus de consultation compare les options disponibles avant de recommander une voie appropriée." },
-    { question: "Combien de temps faut-il pour créer une entreprise aux EAU ?", answer: "Les délais varient selon la juridiction, l'activité, les approbations externes, la préparation des documents et les exigences de visa ou de banque. Certaines licences standard peuvent être émises rapidement, tandis que les activités réglementées peuvent nécessiter des approbations supplémentaires." },
-    { question: "Un investisseur étranger peut-il détenir 100% d'une entreprise EAU ?", answer: "La propriété étrangère à 100% est disponible pour de nombreuses activités mainland et zone franche. Cependant, les exigences dépendent de l'activité, de la forme juridique et de l'autorité de licence responsable." },
-    { question: "Quels documents sont généralement requis ?", answer: "Les exigences comprennent généralement des copies de passeport, des photos, des coordonnées, des noms commerciaux proposés, des informations d'activité et, dans certains cas, une preuve d'adresse, des qualifications, des NOC ou des approbations externes." },
-    { question: "Pouvez-vous aider avec les visas de résidence EAU ?", answer: "Oui. Un support est disponible pour les demandes de visa investisseur, associé, emploi, dépendant et résidence longue durée éligibles, sous réserve des exigences de l'autorité compétente." },
-    { question: "Pouvez-vous garantir l'approbation d'un compte bancaire d'entreprise ?", answer: "Aucun consultant ne peut garantir de manière responsable l'approbation bancaire. Ibrahim Setup peut aider à préparer la demande, organiser les documents, présenter des options bancaires adaptées et réduire les erreurs courantes. L'approbation finale reste à la discrétion de la banque." },
-    { question: "Combien coûte la création d'une entreprise aux EAU ?", answer: "Le coût dépend de l'émirat, de la zone franche, du type de licence, du nombre de visas, des besoins en bureau et des approbations externes. Ces variables faisant fortement varier le montant, Ibrahim Setup fournit un devis écrit basé sur vos besoins précis plutôt que des forfaits à prix fixe." },
-    { question: "Dois-je être aux EAU pour immatriculer une société ?", answer: "De nombreuses immatriculations en zone franche et offshore peuvent se faire à distance avec des documents notariés et légalisés. La création mainland, la visite médicale pour le visa de résidence, la biométrie Emirates ID et la plupart des ouvertures de compte bancaire nécessitent au moins un déplacement aux EAU." },
-    { question: "Mon entreprise doit-elle s'enregistrer à l'impôt sur les sociétés et à la TVA ?", answer: "L'impôt sur les sociétés des EAU s'applique aux bénéfices dépassant le seuil légal, et l'enregistrement est obligatoire pour les entreprises concernées, y compris de nombreuses entités en zone franche. L'enregistrement à la TVA devient obligatoire lorsque le chiffre d'affaires taxable dépasse le seuil, avec possibilité d'enregistrement volontaire en deçà. Ibrahim Setup accompagne les deux démarches." },
+    {
+      question: "Qu'est-ce qu'une société Dubai Mainland ?",
+      answer:
+        "Une société Mainland est enregistrée auprès du département économique de Dubaï. Elle permet de commercer directement dans tous les Émirats, de participer aux appels d'offres et d'ouvrir des locaux n'importe où à Dubaï.",
+    },
+    {
+      question: "Pourquoi faire appel à un consultant avec une expérience DED préalable ?",
+      answer:
+        "Une expérience antérieure au sein de l'administration offre une compréhension précise des démarches et pièces requises, évitant ainsi les rejets ou retards évitables.",
+    },
+    {
+      question: "Ibrahim Setup représente-t-il officiellement le DET de Dubaï ?",
+      answer:
+        "Non. Ibrahim Setup est un cabinet de conseil indépendant. L'expérience d'Ibrahim enrichit ses conseils, mais toutes les décisions d'approbation restent sous l'autorité exclusive du DET et des organismes gouvernementaux.",
+    },
+    {
+      question: "Ibrahim peut-il aider à créer une Cloud Kitchen à Dubaï ?",
+      answer:
+        "Oui. En tant que fondateur et PDG de Cloud Kitchen Setup (CKS), Ibrahim offre un accompagnement spécialisé alliant la licence commerciale et les contraintes techniques du secteur alimentaire.",
+    },
+    {
+      question: "Quelles sont les approbations requises pour une Cloud Kitchen ?",
+      answer:
+        "Une Cloud Kitchen nécessite une licence commerciale Mainland, l'approbation de la sécurité alimentaire de la municipalité de Dubaï et l'accord de la Défense Civile.",
+    },
+    {
+      question: "Garantissez-vous l'approbation des licences ou des comptes bancaires ?",
+      answer:
+        "Non. Aucun consultant responsable ne peut garantir une décision administrative ou bancaire. Ibrahim Setup veille à ce que votre dossier soit parfait, mais les décisions finales appartiennent aux autorités et aux banques.",
+    },
+    {
+      question: "Pouvez-vous aider à choisir l'activité commerciale exacte ?",
+      answer:
+        "Oui. Lors de la consultation, Ibrahim analyse votre projet par rapport au nomenclature officielle de Dubaï pour garantir que votre licence soit parfaitement adaptée.",
+    },
   ],
   ctaBanner: {
-    eyebrow: "Commençons",
-    title: "Prêt à lancer votre entreprise aux EAU ?",
-    text: "Planifiez une session de stratégie gratuite et transformez votre idée d'entreprise en un plan de création clair et pratique.",
-    primaryLabel: "Commencer aujourd'hui",
-    chatWhatsApp: "Discuter sur WhatsApp",
+    eyebrow: "Commencez dès aujourd'hui",
+    title: "Prêt à lancer votre entreprise Dubai Mainland ?",
+    text: "Réservez une consultation directe avec Ibrahim pour un accompagnement clair et pratique.",
+    primaryLabel: "Prendre rendez-vous Mainland",
+    chatWhatsApp: "WhatsApp Ibrahim",
   },
   footer: {
-    description: "Accompagnement personnalisé et de bout en bout pour la création d'entreprise aux EAU, les visas, la banque, les impôts et la conformité\u2014fort d'une expérience pratique des procédures de licence commerciale à Dubaï.",
+    description:
+      "Spécialiste création d'entreprise Dubai Mainland fort d'une expérience préalable DED et PDG de Cloud Kitchen Setup (CKS).",
     navigate: "Navigation",
     services: "Services",
     contact: "Contact",
-    serviceLinks: ["Création d'entreprise", "Services de visa", "Support de compte bancaire", "Enregistrement fiscal", "Consultation juridique", "Renouvellements de licence"],
+    serviceLinks: [
+      "Création Dubai Mainland",
+      "Cloud Kitchen Setup",
+      "Licences Alimentaires",
+      "Visas Investisseur",
+      "Compte Bancaire",
+      "Modifications Licences",
+    ],
     copyright: "Ibrahim Setup. Tous droits réservés.",
     privacyPolicy: "Politique de confidentialité",
     whatsapp: "WhatsApp",
   },
-  disclaimer: "Ibrahim Setup est un cabinet de conseil indépendant et n'est pas une entité gouvernementale des EAU. Les approbations gouvernementales, les décisions bancaires, l'éligibilité aux visas, les délais de traitement et les frais restent soumis aux autorités et institutions concernées.",
+  disclaimer:
+    "Ibrahim Setup est un cabinet de conseil indépendant et n'est ni une autorité gouvernementale ni un représentant officiel du DET de Dubaï.",
   skipToMain: "Aller au contenu principal",
 };

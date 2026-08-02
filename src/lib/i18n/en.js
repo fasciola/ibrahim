@@ -3,220 +3,390 @@ export const en = {
   dir: "ltr",
   nav: {
     home: "Home",
-    about: "About",
+    dubaiMainland: "Dubai Mainland",
+    cloudKitchens: "Cloud Kitchens",
     services: "Services",
+    about: "About Ibrahim",
+    process: "Process",
     faq: "FAQ",
     contact: "Contact",
+    bookConsultation: "Book Consultation",
   },
   header: {
-    freeConsultation: "Free Consultation",
+    freeConsultation: "Book Consultation",
     openMenu: "Open menu",
     closeMenu: "Close menu",
     chatWhatsApp: "Chat on WhatsApp",
   },
   hero: {
-    eyebrow: "UAE Company Formation & Business Setup",
-    title: "Company Formation in the UAE, Handled End to End",
+    eyebrow: "DUBAI MAINLAND BUSINESS SETUP SPECIALIST",
+    title: "Start Your Dubai Mainland Company with an Expert Who Understands the System",
     description:
-      "I help entrepreneurs and investors register mainland, free zone, and offshore companies across Dubai, Abu Dhabi, Sharjah, and the northern emirates. Five years of specialist UAE business setup experience covering jurisdiction choice, trade licences, investor visas, corporate banking, and tax registration.",
-    tags: [
-      "Mainland Company Formation",
-      "Free Zone Setup",
-      "Offshore Companies",
-      "Trade Licences",
-      "Investor Visas",
+      "Set up your Dubai Mainland company with practical guidance from Ibrahim, a business-setup specialist with previous experience supporting licensing services within Dubai’s economic department. From selecting the correct business activity and legal structure to obtaining external approvals, office solutions, visas and banking assistance, every stage is handled with clarity and attention to compliance.",
+    cloudKitchenCopy:
+      "As the owner and CEO of Cloud Kitchen Setup (CKS), Ibrahim also provides specialised support for cloud kitchens, restaurants, food concepts and delivery-based businesses.",
+    trustPoints: [
+      "Former DED Experience",
+      "Dubai Mainland Specialist",
+      "CEO of Cloud Kitchen Setup",
     ],
-    bookConsultation: "Book Your Free Consultation",
-    exploreServices: "Explore Services",
-    personalGuidance: "Personal guidance",
-    clearProcess: "Clear process",
-    promptResponse: "Prompt response",
-    companiesSupported: "Companies Supported",
-    yearsExperience: "Years of UAE Experience",
+    bookConsultation: "Book a Dubai Mainland Consultation",
+    exploreCKS: "Explore Cloud Kitchen Setup",
+    cksUrl: "https://cloudkitchensetup.com/",
   },
-  stats: [
-    { value: 5, suffix: "+", label: "Years Experience" },
-    { value: 500, suffix: "+", label: "Companies Founded" },
-    { value: 100, suffix: "%", label: "Commitment to Client Service" },
-    { value: 24, suffix: "h", label: "Average Response Time" },
-  ],
-  aboutPreview: {
-    eyebrow: "Why Partner With Me",
-    title: "Insider Knowledge of UAE Business Licensing",
-    p1: "My professional background with the Dubai Department of Economic Development gives me a working knowledge of government procedures, documentation standards, and trade licence requirements — plus the practical obstacles entrepreneurs hit when entering the UAE market.",
-    p2: "I use that experience to help clients prepare their file correctly, choose between mainland and free zone jurisdictions on the facts, avoid the mistakes that trigger rejections, and cut preventable delays out of the company formation process.",
-    tags: [
-      "Mainland Formation",
-      "Free Zone Setup",
-      "Investor Visas",
-      "Corporate Banking Support",
-      "Corporate Tax",
-      "Government Procedures",
+  expertiseStrip: {
+    items: [
+      {
+        title: "Dubai Mainland",
+        desc: "Licence formation and business setup specialist",
+      },
+      {
+        title: "Former DED Experience",
+        desc: "Practical understanding of licensing processes",
+      },
+      {
+        title: "Cloud Kitchen Specialist",
+        desc: "Food-business and delivery-kitchen setup",
+      },
+      {
+        title: "Entrepreneurial Experience",
+        desc: "Owner and CEO of Cloud Kitchen Setup (CKS)",
+      },
     ],
-    learnMore: "Learn More About Ibrahim",
   },
-  recognition: {
-    eyebrow: "Dubai Economy & Tourism",
-    title: "Official Recognition",
-    p1: "“Outstanding Performance” recognition awarded to Ibrahim Mohamed Ali Ibrahim Idris in March 2025.",
-    p2: "A government-recognised professional track record reflecting Ibrahim’s commitment to service quality, accuracy, responsiveness, and professional conduct.",
+  mainlandExpertise: {
+    title: "Dubai Mainland Setup Is Ibrahim’s Core Expertise",
+    p1: "Dubai Mainland businesses can trade throughout the UAE, work with government and private-sector clients, open physical offices and operate across a broad range of commercial and professional activities. However, the correct licence structure depends on the selected activities, ownership arrangement, premises, external approvals and operational model.",
+    p2: "Ibrahim helps entrepreneurs understand these requirements before committing funds, reducing avoidable application errors, unnecessary amendments and licensing delays.",
+    cta: "Discuss Your Mainland Business",
+    cards: [
+      {
+        title: "Business Activity Selection",
+        desc: "Identify and match the correct commercial, industrial, or professional activities to your Mainland licence.",
+      },
+      {
+        title: "Trade Name Reservation",
+        desc: "Guidance on trade name selection, reservation rules, and compliance with Dubai naming guidelines.",
+      },
+      {
+        title: "Initial Approval",
+        desc: "Prepare and submit initial approval files to obtain preliminary sanction for your Mainland company.",
+      },
+      {
+        title: "Legal Form Guidance",
+        desc: "Advice on selecting Sole Establishment, Civil Company, LLC, or Branch structures based on ownership and goals.",
+      },
+      {
+        title: "Memorandum & Documentation",
+        desc: "Coordination of MOA, LSA, corporate resolutions, and notarisation requirements.",
+      },
+      {
+        title: "Mainland Licence Issuance",
+        desc: "Step-by-step coordination from initial file creation through final commercial licence issuance.",
+      },
+      {
+        title: "Office & Ejari Support",
+        desc: "Assistance with commercial lease verification, Ejari registration, and physical office criteria.",
+      },
+      {
+        title: "External Authority Approvals",
+        desc: "Coordination with Dubai Municipality, RTA, DHA, KHDA, Civil Defence, and other regulatory bodies.",
+      },
+      {
+        title: "Establishment Card",
+        desc: "Application support for Ministry of Human Resources & Emiratisation (MOHRE) and immigration files.",
+      },
+      {
+        title: "Investor & Employee Visas",
+        desc: "Guidance on investor, partner, manager, and employee residence visa processing.",
+      },
+      {
+        title: "Corporate Bank Account Assistance",
+        desc: "Application file preparation, bank compliance alignment, and account opening coordination.",
+      },
+      {
+        title: "Licence Amendments & Renewals",
+        desc: "Ongoing support for activity additions, partner transfers, address updates, and annual renewals.",
+      },
+    ],
+  },
+  formerDED: {
+    heading: "Practical Insight from Previous DED Experience",
+    p1: "Ibrahim’s previous professional experience within Dubai’s economic licensing environment gave him direct exposure to the questions, documentation requirements and procedural challenges entrepreneurs commonly face when establishing Mainland companies.",
+    p2: "Today, he applies that practical understanding to help clients select suitable activities, prepare their applications correctly, understand approval requirements and move through the setup process with greater confidence.",
     disclaimer:
-      "Ibrahim Setup is an independent consultancy and is not a government entity or an official representative of Dubai Economy & Tourism.",
+      "Ibrahim Setup is an independent business consultancy and is not a government authority or an official representative of the Dubai Department of Economy and Tourism. Government approvals remain subject to the applicable authority’s requirements.",
+    logoBadgeText:
+      "Previous professional experience within Dubai’s economic department",
   },
-  ecosystem: {
-    eyebrow: "How It Works",
-    title: "The UAE Business Setup Process, Step by Step",
-    intro:
-      "From first consultation to post-licence compliance, every stage of your UAE company formation is coordinated through one clear, personalised process.",
+  cloudKitchen: {
+    heading: "Specialist Cloud Kitchen and Food-Business Setup",
+    subtitle: "Built from real operational experience, not theory",
+    p1: "Ibrahim is the owner and CEO of Cloud Kitchen Setup (CKS), a specialist platform created to help entrepreneurs launch cloud kitchens, delivery-first restaurants and food concepts in Dubai.",
+    p2: "This gives clients access to practical support covering both company licensing and the operational requirements of starting a food business.",
+    ledBy: "Founded and led by Ibrahim",
+    visitCKS: "Visit Cloud Kitchen Setup",
+    bookConsultation: "Book a Cloud Kitchen Consultation",
+    cards: [
+      {
+        title: "Cloud Kitchen Business Model",
+        desc: "Feasibility analysis, delivery radius planning, and shared vs dedicated kitchen model evaluation.",
+      },
+      {
+        title: "Food Business Activity Selection",
+        desc: "Matching specific food concepts to approved Dubai Mainland & Municipality activities.",
+      },
+      {
+        title: "Mainland Food Licence Support",
+        desc: "Full coordination for commercial food trade licence issuance in Dubai.",
+      },
+      {
+        title: "Location & Premises Considerations",
+        desc: "Criteria for selecting approved commercial kitchen spaces with adequate power, extraction, and drainage.",
+      },
+      {
+        title: "Food Safety & Authority Approvals",
+        desc: "Guidance on Dubai Municipality Food Safety Department (DM-FSD) and Civil Defence requirements.",
+      },
+      {
+        title: "Kitchen Layout & Operational Planning",
+        desc: "Workflow and space layout recommendations aligned with health and hygiene regulations.",
+      },
+      {
+        title: "Delivery Platform Readiness",
+        desc: "Preparing business documents for onboarding onto Talabat, Deliveroo, Careem, and Noon.",
+      },
+      {
+        title: "Branding & Launch Support",
+        desc: "Strategic advice for positioning delivery-only concepts in the competitive UAE market.",
+      },
+    ],
+  },
+  aboutAuthority: {
+    heading: "Government-Process Knowledge. Real Business Experience.",
+    p1: "Ibrahim specialises in helping entrepreneurs establish Dubai Mainland companies with greater clarity and confidence. His previous experience within Dubai’s economic licensing environment provided valuable exposure to commercial activities, legal structures, documentation, licensing procedures and customer challenges.",
+    p2: "His experience is strengthened by his role as an entrepreneur and the owner and CEO of Cloud Kitchen Setup. This combination allows him to advise clients from both perspectives: understanding the setup process and understanding what it takes to build and operate a real business.",
+    profileName: "Ibrahim Mohamed Ali Ibrahim Idris",
+    profileRole: "Dubai Mainland Business Setup Specialist",
+    profileTag1: "Owner & CEO — Cloud Kitchen Setup (CKS)",
+    profileTag2: "Former DED Licensing Experience",
+  },
+  audience: {
+    heading: "Specialised Support for Entrepreneurs Building in Dubai",
+    cards: [
+      {
+        title: "Dubai Mainland Entrepreneurs",
+        desc: "Founders opening a Dubai Mainland company for full UAE market access and government contracts.",
+      },
+      {
+        title: "Restaurant & Café Founders",
+        desc: "Dine-in and takeaway food business owners needing licensing, location advice, and municipal approvals.",
+      },
+      {
+        title: "Cloud Kitchen Operators",
+        desc: "Delivery-first food brands launching in shared or standalone commercial kitchen facilities.",
+      },
+      {
+        title: "International Investors",
+        desc: "Foreign investors seeking clear, compliant entry into Dubai Mainland with 100% ownership options.",
+      },
+      {
+        title: "Existing Business Owners",
+        desc: "Companies modifying activities, updating ownership structures, or expanding operational scope.",
+      },
+      {
+        title: "Visa & Investor Clients",
+        desc: "Entrepreneurs requiring residency visas, establishment cards, and corporate bank account support.",
+      },
+    ],
+  },
+  setupProcess: {
+    heading: "Your Dubai Mainland Setup Journey",
+    foodCallout:
+      "Opening a food or delivery business? Ibrahim can provide specialist cloud-kitchen setup guidance through CKS.",
     steps: [
       {
         num: "01",
-        title: "Consultation & Planning",
-        description:
-          "We map your business model, target market, ownership requirements, budget, visa needs, and launch timeline before any application is filed.",
+        title: "Consultation",
+        desc: "Understand the business concept, ownership structure, and operational needs.",
       },
       {
         num: "02",
-        title: "Company Formation & Trade Licence",
-        description:
-          "Selecting the jurisdiction, legal form, business activities, trade name, external approvals, and licence structure that fit your plan.",
+        title: "Activity & Structure Selection",
+        desc: "Identify the appropriate business activities, licence type, and legal form.",
       },
       {
         num: "03",
-        title: "UAE Residence Visas",
-        description:
-          "Coordinating investor, partner, employee, dependent, and eligible long-term residence visa applications.",
+        title: "Name & Initial Approval",
+        desc: "Prepare trade-name reservation and initial-approval applications.",
       },
       {
         num: "04",
-        title: "Corporate Banking & Tax",
-        description:
-          "Preparing corporate bank account applications, corporate tax registration, and VAT registration where applicable.",
+        title: "Documents & Premises",
+        desc: "Coordinate corporate documents (MOA/LSA), office requirements, and Ejari.",
       },
       {
         num: "05",
-        title: "Ongoing Compliance",
-        description:
-          "Trade licence renewals, amendments, PRO services, compliance deadlines, and operational changes after launch.",
+        title: "External Approvals",
+        desc: "Identify and coordinate approvals required for regulated commercial activities.",
+      },
+      {
+        num: "06",
+        title: "Licence Issuance",
+        desc: "Complete the licensing process subject to government authority approval.",
+      },
+      {
+        num: "07",
+        title: "Visas & Establishment",
+        desc: "Support establishment-card, immigration, and residence visa procedures.",
+      },
+      {
+        num: "08",
+        title: "Launch Support",
+        desc: "Assist with corporate banking, cloud-kitchen requirements, and operational next steps.",
       },
     ],
   },
-  jurisdictions: {
-    eyebrow: "Where We Register Companies",
-    title: "Company Formation Across All Seven Emirates",
-    intro:
-      "The right emirate and licence type depend on your activity, customers, office needs, and budget. Here is how the main options compare.",
-    types: [
+  caseStudies: {
+    heading: "Experience Applied to Real Business Challenges",
+    disclaimer:
+      "Editable structures ready for verified client-approved case studies.",
+    items: [
       {
-        name: "Mainland Company Formation",
-        description:
-          "Registered with the emirate’s economic department (such as Dubai DET or Abu Dhabi ADDED). Lets you trade directly across the UAE market and bid for government contracts, with 100% foreign ownership available on most activities.",
+        title: "Dubai Mainland Professional Licence",
+        challenge:
+          "Navigating complex activity combinations and local service agent requirements.",
+        approach:
+          "Clear activity mapping and structured document coordination with Dubai licensing authorities.",
+        result:
+          "Licence issued with 100% foreign ownership and full commercial operational status.",
       },
       {
-        name: "Free Zone Company Setup",
-        description:
-          "Registered inside one of 40-plus UAE free zones. Full foreign ownership, streamlined registration, and packages that bundle a trade licence, flexi-desk, and visa allocation — best suited to service, trading, and holding businesses.",
+        title: "Cloud Kitchen Business Setup",
+        challenge:
+          "Selecting an approved location meeting Dubai Municipality food safety and extraction standards.",
+        approach:
+          "Integrated setup plan covering Mainland company licence, municipal permits, and delivery readiness.",
+        result:
+          "Commercial kitchen operational and successfully onboarded onto UAE delivery platforms.",
       },
       {
-        name: "Offshore Company Registration",
-        description:
-          "A non-resident structure used for asset holding, international trade, and corporate structuring. No UAE residence visas are issued against an offshore licence.",
+        title: "Mainland Corporate Licence Amendment",
+        challenge:
+          "Restructuring business activities and updating corporate legal form without operational interruption.",
+        approach:
+          "Structured amendment filing and external authority approval coordination.",
+        result:
+          "Updated trade licence issued with expanded commercial activity scope.",
       },
-    ],
-    emiratesLabel: "Emirates we cover",
-    emirates: [
-      "Dubai",
-      "Abu Dhabi",
-      "Sharjah",
-      "Ras Al Khaimah",
-      "Ajman",
-      "Fujairah",
-      "Umm Al Quwain",
     ],
   },
   servicesPreview: {
-    eyebrow: "Services",
-    title: "Everything Your UAE Business Needs",
+    eyebrow: "Services Hierarchy",
+    title: "Specialist UAE Setup Services",
     intro:
-      "Practical, end-to-end support for registering, running, and growing a company in the UAE.",
+      "Dubai Mainland formation and Cloud Kitchen setup receive primary emphasis, supported by essential licensing and visa services.",
     viewAll: "View All Services",
     learnMore: "Learn More",
     cards: [
       {
-        title: "Company Formation",
+        title: "Dubai Mainland Company Formation",
         description:
-          "Mainland, free zone, and offshore company registration matched to your business activities, ownership requirements, market strategy, and budget.",
+          "Complete guidance for establishing a Dubai Mainland LLC, Civil Company, or Branch with full local market access.",
         included: [
-          "Mainland LLC Formation",
-          "Free Zone Company Registration",
-          "Offshore Company Setup",
+          "Activity & Trade Name Selection",
+          "Initial Approval & MOA Coordination",
+          "Mainland Licence & Ejari Assistance",
+        ],
+        link: "/services/dubai-mainland-company-formation",
+        featured: true,
+      },
+      {
+        title: "Cloud Kitchen & Food-Business Setup",
+        description:
+          "Specialised setup support for delivery kitchens, food concepts, and restaurants led by the CEO of CKS.",
+        included: [
+          "Food Activity & Licence Guidance",
+          "Municipality & Safety Approvals",
+          "Delivery Platform Onboarding Support",
+        ],
+        link: "/services/cloud-kitchen-setup",
+        featured: true,
+      },
+      {
+        title: "Restaurant & Food Business Setup",
+        description:
+          "End-to-end licensing, premises Ejari, and authority approvals for dine-in restaurants, cafés, and food outlets.",
+        included: [
+          "Commercial Kitchen Licensing",
+          "Food Safety Department Approvals",
+          "Location Criteria Verification",
+        ],
+        link: "/services/restaurant-food-business-setup",
+      },
+      {
+        title: "Investor & Partner Visas",
+        description:
+          "Guidance on eligible residence, investor, partner, employment, and family visa procedures.",
+        included: [
+          "Investor & Partner Residence Visas",
+          "Establishment Card Processing",
+          "Golden Visa Eligibility Support",
+        ],
+        link: "/services/investor-visa",
+      },
+      {
+        title: "Corporate Bank-Account Assistance",
+        description:
+          "Preparing compliant corporate banking files, documentation alignment, and introducing suitable banking partners.",
+        included: [
+          "Corporate Banking File Preparation",
+          "Compliance & KYC Alignment",
+          "UAE Bank Application Assistance",
+        ],
+        link: "/services/business-bank-account",
+      },
+      {
+        title: "External Approval Coordination",
+        description:
+          "Navigating third-party approvals from Dubai Municipality, RTA, DHA, KHDA, and Civil Defence.",
+        included: [
+          "Regulatory Requirement Checks",
+          "Document Filing Preparation",
+          "Authority Follow-up Assistance",
         ],
       },
       {
-        title: "UAE Visa Services",
+        title: "Licence Amendments & Renewals",
         description:
-          "End-to-end guidance on eligible residence, investor, employment, partner, and family visa applications.",
+          "Ongoing PRO support for trade licence renewals, activity modifications, and shareholder restructuring.",
         included: [
-          "UAE Golden Visa Support",
-          "Investor and Partner Visas",
-          "Employment and Family Visas",
+          "Annual Trade Licence Renewals",
+          "Activity & Name Amendments",
+          "Share Transfer Coordination",
         ],
       },
       {
-        title: "Corporate Banking & Tax",
+        title: "Free-Zone Company Formation",
         description:
-          "Corporate bank account preparation alongside UAE corporate tax and VAT registration assistance.",
+          "Secondary guidance on selecting and registering in suitable UAE free zones when Mainland is not required.",
         included: [
-          "Corporate Bank Account Support",
+          "Free Zone Comparison & Selection",
+          "Package & Flexi-Desk Guidance",
+          "Bundled Visa Allocations",
+        ],
+      },
+      {
+        title: "Corporate Tax & Business Support",
+        description:
+          "Assistance with corporate tax registration, VAT registration, and ongoing regulatory compliance.",
+        included: [
           "Corporate Tax Registration",
-          "VAT Registration",
-        ],
-      },
-      {
-        title: "Legal & Consultation",
-        description:
-          "Practical help with company documents, shareholder agreements, trademark applications, and business structuring.",
-        included: [
-          "Ownership and Structuring Advice",
-          "MOA and LSA Coordination",
-          "Trademark Registration Support",
-        ],
-      },
-      {
-        title: "PRO & Ongoing Support",
-        description:
-          "Post-formation support that keeps your company records, trade licence renewals, and government requirements in order.",
-        included: [
-          "Trade Licence Renewals",
-          "PRO Services",
-          "Office Space Solutions",
-        ],
-      },
-      {
-        title: "Priority Setup Service",
-        description:
-          "Coordinated priority assistance for entrepreneurs working to a demanding launch deadline.",
-        included: [
-          "Priority Application Coordination",
-          "Dedicated Point of Contact",
-          "Time-Sensitive Document Follow-Up",
+          "VAT Registration Assistance",
+          "Compliance Schedule Support",
         ],
       },
     ],
-  },
-  personalConsultant: {
-    eyebrow: "Personal Consultant",
-    title: "Work Directly With an Experienced UAE Business Setup Consultant",
-    description:
-      "You will not be passed between departments or left chasing updates. Ibrahim is your single point of contact throughout the company formation process, explaining the available options, the documents required, the costs to expect, and the next step at every stage.",
-    checklist: [
-      "Personalised mainland vs free zone comparison",
-      "Clear explanation of setup costs and requirements",
-      "Direct communication and regular updates",
-      "Document preparation guidance",
-      "Support before and after trade licence issuance",
-    ],
-    cta: "Discuss Your Business Plan",
   },
   testimonials: {
     eyebrow: "Client Experiences",
@@ -225,7 +395,7 @@ export const en = {
       {
         quote:
           "It was great to work with you. I really appreciate your kind support, professional knowledge, prompt responses, and action at all times.",
-        name: "Client testimonial",
+        name: "Client Testimonial",
         source: "Via WhatsApp",
         rating: 5,
       },
@@ -238,7 +408,7 @@ export const en = {
       },
       {
         quote:
-          "Ibrahim was an amazing help from the start. He answered all my questions and helped complete the required processes within 24 hours.",
+          "Ibrahim was an amazing help from the start. He answered all my questions and helped complete the required processes efficiently.",
         name: "George M. J.",
         source: "Via Google Review",
         rating: 5,
@@ -247,82 +417,72 @@ export const en = {
   },
   faqPreview: {
     eyebrow: "FAQ",
-    title: "UAE Company Formation Questions, Answered",
+    title: "Frequently Asked Questions",
     viewAll: "View All Frequently Asked Questions",
   },
   faqs: [
     {
-      question: "Should I choose a mainland or free zone company in the UAE?",
+      question: "What is a Dubai Mainland company?",
       answer:
-        "It depends on your business activities, target customers, office requirements, visa needs, ownership structure, and budget. A mainland licence lets you trade directly across the UAE market and bid for government work; a free zone licence offers full foreign ownership and faster, bundled registration. The consultation compares both against your plan before recommending a route.",
+        "A Dubai Mainland company is registered directly with the relevant Dubai economic department. It allows you to trade freely throughout the UAE market, bid for government and private sector contracts, and open physical offices anywhere in Dubai, with 100% foreign ownership available on most commercial and professional activities.",
     },
     {
-      question: "How long does it take to set up a company in the UAE?",
+      question: "Why work with a consultant with former DED experience?",
       answer:
-        "Timeframes vary by jurisdiction, business activity, external approvals, document readiness, and visa or banking requirements. Some standard free zone trade licences are issued within a few working days, while regulated activities requiring third-party approvals take longer.",
+        "Previous experience inside Dubai’s economic licensing environment provides practical insight into procedural requirements, documentation standards, and common application hurdles. This practical understanding helps ensure applications are prepared accurately, avoiding unnecessary delays or rejections.",
     },
     {
-      question: "Can a foreign investor own 100% of a UAE company?",
+      question: "Does Ibrahim Setup represent the Dubai Department of Economy and Tourism (DET)?",
       answer:
-        "Full foreign ownership is available for most mainland activities and for all free zone companies. The exact position depends on the business activity, legal form, and the licensing authority responsible for it.",
+        "No. Ibrahim Setup is an independent business consultancy and is not a government authority, official partner, or representative of DET. Ibrahim’s previous professional experience informs his private guidance, but all official licensing decisions remain subject to DET and relevant government department approvals.",
     },
     {
-      question: "What documents are required for UAE company formation?",
+      question: "Can Ibrahim help establish a cloud kitchen or food business in Dubai?",
       answer:
-        "Typically passport copies, photographs, contact details, proposed trade names, and business activity information. Depending on the activity you may also need proof of address, academic or professional qualifications, a no-objection certificate, or external regulatory approvals.",
+        "Yes. As the owner and CEO of Cloud Kitchen Setup (CKS), Ibrahim provides specialized guidance for cloud kitchens, delivery restaurants, and food concepts—combining commercial licensing support with practical operational knowledge.",
     },
     {
-      question: "Can you help with UAE residence visas?",
+      question: "What approvals does a cloud kitchen require in Dubai?",
       answer:
-        "Yes. Support is available for eligible investor, partner, employment, dependent, and long-term residence visa applications, subject to the requirements of the relevant authority.",
+        "A cloud kitchen requires a Dubai Mainland commercial trade licence, food activity approvals from Dubai Municipality Food Safety Department (DM-FSD), Civil Defence fire safety approvals, and compliance with approved kitchen layout and extraction standards.",
     },
     {
-      question: "Can you guarantee a corporate bank account will be approved?",
+      question: "Do you guarantee trade licence or bank account approvals?",
       answer:
-        "No consultant can responsibly guarantee bank approval. Ibrahim Setup helps prepare the application, organise supporting documents, introduce suitable banking options, and avoid the mistakes that commonly cause rejections. The final decision rests with the bank.",
+        "No. Responsible business setup consultants cannot guarantee government or banking approvals. Ibrahim Setup ensures your file is accurate, compliant, and well-prepared to give your application the best foundation, but final decisions rest exclusively with the respective authorities and banks.",
     },
     {
-      question: "How much does it cost to open a company in the UAE?",
+      question: "Can you help select the correct business activity?",
       answer:
-        "Cost depends on the emirate, free zone, licence type, number of visas, office or flexi-desk requirements, and any external approvals. Because these variables move the figure significantly, Ibrahim Setup provides a written estimate based on your specific requirements rather than publishing fixed package prices.",
-    },
-    {
-      question: "Do I need to be in the UAE to register a company?",
-      answer:
-        "Many free zone and offshore registrations can be completed remotely with notarised and attested documents. Mainland formation, residence visa medical testing, Emirates ID biometrics, and most corporate bank account openings require at least one visit to the UAE.",
-    },
-    {
-      question: "Does my UAE company have to register for corporate tax and VAT?",
-      answer:
-        "UAE corporate tax applies to business profits above the statutory threshold, and registration is required for in-scope businesses including many free zone entities. VAT registration becomes mandatory once taxable turnover passes the registration threshold, with voluntary registration available below it. Ibrahim Setup assists with both registrations and can refer you to a licensed tax adviser for filing.",
+        "Yes. During your consultation, Ibrahim evaluates your planned business model against official Dubai activity lists to ensure your licence accurately reflects your operations and meets external approval requirements.",
     },
   ],
   ctaBanner: {
-    eyebrow: "Let’s Begin",
-    title: "Ready to Start Your Business in the UAE?",
-    text: "Book a free strategy session and turn your business idea into a clear, costed UAE setup plan.",
-    primaryLabel: "Get Started Today",
-    chatWhatsApp: "Chat on WhatsApp",
+    eyebrow: "Start Today",
+    title: "Ready to Launch Your Dubai Mainland Company?",
+    text: "Book a direct consultation with Ibrahim for clear, practical guidance on Dubai Mainland setup and food business licensing.",
+    primaryLabel: "Book a Dubai Mainland Consultation",
+    chatWhatsApp: "WhatsApp Ibrahim",
   },
   footer: {
     description:
-      "Personalised, end-to-end UAE company formation: mainland and free zone trade licences, residence visas, corporate banking, tax registration, and ongoing compliance — backed by hands-on experience of Dubai business licensing procedures.",
+      "Dubai Mainland Business Setup Specialist backed by former DED experience and real business ownership as CEO of Cloud Kitchen Setup (CKS).",
     navigate: "Navigate",
     services: "Services",
     contact: "Contact",
     serviceLinks: [
-      "Company Formation",
-      "Visa Services",
+      "Dubai Mainland Formation",
+      "Cloud Kitchen Setup",
+      "Food Business Licensing",
+      "Investor Visas",
       "Bank Account Support",
-      "Tax Registration",
-      "Legal Consultation",
-      "Licence Renewals",
+      "Licence Amendments",
     ],
     copyright: "Ibrahim Setup. All rights reserved.",
     privacyPolicy: "Privacy Policy",
     whatsapp: "WhatsApp",
   },
   disclaimer:
-    "Ibrahim Setup is an independent business consultancy and is not a UAE government entity. Government approvals, banking decisions, visa eligibility, processing times, and fees remain subject to the relevant authorities and institutions.",
+    "Ibrahim Setup is an independent business consultancy and is not a government authority or official representative of the Dubai Department of Economy and Tourism (DET). Government approvals, visa grants, and banking decisions remain subject to authority requirements.",
   skipToMain: "Skip to main content",
 };

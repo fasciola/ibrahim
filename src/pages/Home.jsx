@@ -1,15 +1,18 @@
 import SEO from "@/components/seo/SEO";
 import JsonLd, { faqPageSchema } from "@/components/seo/JsonLd";
 import Hero from "@/components/home/Hero";
-import StatsBar from "@/components/home/StatsBar";
-import AboutPreview from "@/components/home/AboutPreview";
-import Recognition from "@/components/home/Recognition";
-import Ecosystem from "@/components/home/Ecosystem";
-import Jurisdictions from "@/components/home/Jurisdictions";
+import ExpertiseStrip from "@/components/home/ExpertiseStrip";
+import MainlandExpertiseSection from "@/components/home/MainlandExpertiseSection";
+import FormerDEDExperience from "@/components/home/FormerDEDExperience";
+import CloudKitchenAuthority from "@/components/home/CloudKitchenAuthority";
+import AboutIbrahim from "@/components/home/AboutIbrahim";
 import ServicesPreview from "@/components/home/ServicesPreview";
-import PersonalConsultant from "@/components/home/PersonalConsultant";
+import AudienceSection from "@/components/home/AudienceSection";
+import SetupProcess from "@/components/home/SetupProcess";
+import VerifiedCaseStudies from "@/components/home/VerifiedCaseStudies";
 import Testimonials from "@/components/home/Testimonials";
 import FAQPreview from "@/components/home/FAQPreview";
+import ComplianceDisclaimer from "@/components/ui/ComplianceDisclaimer";
 import CTABanner from "@/components/ui/CTABanner";
 import { useLanguage } from "@/lib/i18n/LanguageContext";
 
@@ -19,21 +22,24 @@ export default function Home() {
   return (
     <>
       <SEO
-        title="UAE Company Formation & Business Setup | Ibrahim Setup"
-        description="Register a mainland, free zone, or offshore company in the UAE. Expert help with trade licences, investor visas, corporate banking, and tax registration across Dubai, Abu Dhabi, and Sharjah."
+        title="Dubai Mainland Business Setup Specialist | Ibrahim Setup"
+        description="Establish your Dubai Mainland company with practical guidance from Ibrahim, a former DED professional and CEO of Cloud Kitchen Setup. Support for licensing, approvals, visas, offices and food-business setup."
         path="/"
       />
       <JsonLd id="home-faq" data={faqPageSchema(t.faqs.slice(0, 6))} />
       <Hero />
-      <StatsBar />
-      <AboutPreview />
-      <Recognition />
-      <Ecosystem />
-      <Jurisdictions />
+      <ExpertiseStrip />
+      <MainlandExpertiseSection />
+      <FormerDEDExperience />
+      <CloudKitchenAuthority />
+      <AboutIbrahim />
       <ServicesPreview />
-      <PersonalConsultant />
+      <AudienceSection />
+      <SetupProcess />
+      <VerifiedCaseStudies />
       <Testimonials />
       <FAQPreview />
+      <ComplianceDisclaimer />
       <CTABanner />
     </>
   );

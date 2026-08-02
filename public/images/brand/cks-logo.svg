@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 80" fill="none">
+  <rect width="320" height="80" rx="12" fill="#071A2B"/>
+  <!-- Chef Hat / Flame Accent -->
+  <path d="M40 22C42 22 43.5 20.5 43.5 18.5C43.5 16.5 42 15 40 15C38 15 36.5 16.5 36.5 18.5C36.5 20.5 38 22 40 22Z" fill="#D4AF37"/>
+  <path d="M40 25C30 25 24 33 24 43V58H56V43C56 33 50 25 40 25ZM30 52V45C30 39.5 34.5 35 40 35C45.5 35 50 39.5 50 45V52H30Z" fill="#D4AF37"/>
+  <rect x="24" y="60" width="32" height="5" rx="2.5" fill="#E6C875"/>
+  <!-- Text: CKS / CLOUD KITCHEN SETUP -->
+  <text x="70" y="42" font-family="'Sora', 'Segoe UI', sans-serif" font-weight="800" font-size="22" fill="#FFFFFF" letter-spacing="1">CLOUD KITCHEN</text>
+  <text x="70" y="60" font-family="'Inter', 'Segoe UI', sans-serif" font-weight="600" font-size="12" fill="#D4AF37" letter-spacing="3">SETUP • CKS</text>
+</svg>

@@ -20,6 +20,8 @@ import PrivacyPolicy from '@/pages/PrivacyPolicy';
 import ThankYou from '@/pages/ThankYou';
 import AdminInquiries from '@/pages/AdminInquiries';
 
+import ServiceDetail from '@/pages/ServiceDetail';
+
 const AuthenticatedApp = () => {
   const { isLoadingAuth, isLoadingPublicSettings, authError, navigateToLogin } = useAuth();
 
@@ -50,6 +52,7 @@ const AuthenticatedApp = () => {
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
         <Route path="/services" element={<Services />} />
+        <Route path="/services/:serviceSlug" element={<ServiceDetail />} />
         <Route path="/faq" element={<FAQ />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/consultation" element={<Consultation />} />
