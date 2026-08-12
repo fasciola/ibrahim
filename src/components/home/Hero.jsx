@@ -18,6 +18,29 @@ const item = {
   show: { opacity: 1, y: 0, transition: spring },
 };
 
+function HighlightedDescription({ text }) {
+  if (!text) return null;
+
+  const phrase = "within Dubai’s economic department";
+  const index = text.toLowerCase().indexOf(phrase.toLowerCase());
+
+  if (index === -1) return text;
+
+  const before = text.slice(0, index);
+  const match = text.slice(index, index + phrase.length);
+  const after = text.slice(index + phrase.length);
+
+  return (
+    <>
+      {before}
+      <span className="rounded-md bg-emerald-100/80 px-1.5 py-0.5 font-semibold text-[#0B5964] ring-1 ring-inset ring-emerald-200/80">
+        {match}
+      </span>
+      {after}
+    </>
+  );
+}
+
 export default function Hero() {
   const { t, dir } = useLanguage();
   const h = t.hero;
@@ -55,7 +78,7 @@ export default function Hero() {
             variants={item}
             className="mt-6 max-w-3xl text-[15px] leading-7 text-slate-600 sm:text-[17px] sm:leading-8"
           >
-            {h?.description}
+            <HighlightedDescription text={h?.description} />
           </motion.p>
 
           <motion.div variants={item} className="mt-7 flex flex-wrap gap-3">
@@ -82,7 +105,7 @@ export default function Hero() {
           <motion.div variants={item} className="mt-7 flex flex-wrap gap-x-5 gap-y-3 text-[12px] font-semibold text-slate-700">
             <span className="inline-flex items-center gap-2"><Award className="h-4 w-4 text-emerald-500" /> Former DED Experience</span>
             <span className="inline-flex items-center gap-2"><Building2 className="h-4 w-4 text-emerald-500" /> Dubai Mainland Specialist</span>
-            <span className="inline-flex items-center gap-2"><Utensils className="h-4 w-4 text-emerald-500" /> Cloud Kitchen Setup CEO</span>
+            <span className="inline-flex items-center gap-2"><Utensils className="h-4 w-4 text-emerald-500" /> Cloud Kitchen Setup Expert</span>
           </motion.div>
         </div>
 
