@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import { UserCheck, Award, Briefcase, ArrowRight, ShieldCheck } from "lucide-react";
+import { Award, Briefcase, ArrowRight, ShieldCheck } from "lucide-react";
 import { useLanguage } from "@/lib/i18n/LanguageContext";
 
 export default function AboutIbrahim() {
@@ -47,10 +47,14 @@ export default function AboutIbrahim() {
           <div className="lg:col-span-5">
             <div className="rounded-3xl border border-border bg-card p-8 shadow-xl text-center relative overflow-hidden">
               <div className="absolute top-0 right-0 h-32 w-32 bg-gold/10 rounded-full blur-2xl -z-10" />
-              
-              {/* Portrait Placeholder Card */}
-              <div className="mx-auto flex h-32 w-32 items-center justify-center rounded-full bg-navy text-gold text-3xl font-heading font-bold shadow-inner">
-                IM
+
+              <div className="mx-auto h-40 w-40 overflow-hidden rounded-full border-4 border-white shadow-[0_8px_28px_rgba(7,26,43,0.16)] ring-1 ring-border bg-white">
+                <img
+                  src="/images/ibrahim%20certif.jpeg"
+                  alt="Ibrahim Mohamed Ali Ibrahim Idris"
+                  className="h-full w-full object-cover object-top"
+                  loading="lazy"
+                />
               </div>
 
               <h3 className="mt-6 text-xl font-bold text-navy font-heading">
