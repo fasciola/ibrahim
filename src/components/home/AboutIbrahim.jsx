@@ -48,11 +48,11 @@ export default function AboutIbrahim() {
             <div className="rounded-3xl border border-border bg-card p-8 shadow-xl text-center relative overflow-hidden">
               <div className="absolute top-0 right-0 h-32 w-32 bg-gold/10 rounded-full blur-2xl -z-10" />
 
-              <div className="mx-auto h-40 w-40 overflow-hidden rounded-full border-4 border-white shadow-[0_8px_28px_rgba(7,26,43,0.16)] ring-1 ring-border bg-white">
+              <div className="mx-auto max-w-md overflow-hidden rounded-2xl border border-border bg-white shadow-[0_10px_36px_rgba(7,26,43,0.14)]">
                 <img
                   src="/images/ibrahim%20certif.jpeg"
-                  alt="Ibrahim Mohamed Ali Ibrahim Idris"
-                  className="h-full w-full object-cover object-top"
+                  alt="Certificate awarded to Ibrahim Mohamed Ali Ibrahim Idris"
+                  className="block h-auto w-full object-contain"
                   loading="lazy"
                 />
               </div>
