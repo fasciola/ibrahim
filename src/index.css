@@ -4,50 +4,50 @@
 
 @layer base {
   :root {
-    --background: 43 31% 95%;
-    --foreground: 210 44% 13%;
+    --background: 0 0% 100%;
+    --foreground: 211 35% 13%;
     --card: 0 0% 100%;
-    --card-foreground: 210 44% 13%;
+    --card-foreground: 211 35% 13%;
     --popover: 0 0% 100%;
-    --popover-foreground: 210 44% 13%;
-    --primary: 208 72% 10%;
+    --popover-foreground: 211 35% 13%;
+    --primary: 193 82% 18%;
     --primary-foreground: 0 0% 100%;
-    --secondary: 208 62% 16%;
-    --secondary-foreground: 0 0% 100%;
-    --muted: 210 16% 96%;
-    --muted-foreground: 209 16% 39%;
-    --accent: 39 48% 57%;
-    --accent-foreground: 208 72% 10%;
+    --secondary: 194 37% 96%;
+    --secondary-foreground: 193 82% 18%;
+    --muted: 210 20% 97%;
+    --muted-foreground: 210 12% 42%;
+    --accent: 163 89% 43%;
+    --accent-foreground: 193 82% 12%;
     --destructive: 0 72% 42%;
     --destructive-foreground: 0 0% 98%;
-    --border: 210 18% 89%;
-    --input: 210 18% 89%;
-    --ring: 39 48% 57%;
-    --radius: 0.625rem;
+    --border: 210 17% 90%;
+    --input: 210 17% 90%;
+    --ring: 163 89% 43%;
+    --radius: 0.875rem;
 
-    --navy: 208 72% 10%;
-    --navy-secondary: 208 62% 16%;
-    --blue: 199 59% 30%;
-    --gold: 39 48% 57%;
-    --gold-light: 40 53% 81%;
-    --cream: 43 31% 95%;
-    --ink: 210 44% 13%;
-    --muted-ink: 209 16% 39%;
-    --success: 160 53% 30%;
+    --navy: 193 82% 18%;
+    --navy-secondary: 193 71% 24%;
+    --blue: 193 82% 18%;
+    --gold: 163 89% 43%;
+    --gold-light: 157 76% 86%;
+    --cream: 210 20% 98%;
+    --ink: 211 35% 13%;
+    --muted-ink: 210 12% 42%;
+    --success: 163 89% 34%;
 
     --font-heading: "Sora", "Cairo", ui-sans-serif, system-ui, sans-serif;
     --font-body: "Inter", "Cairo", ui-sans-serif, system-ui, sans-serif;
     --font-display: "Sora", "Cairo", ui-sans-serif, system-ui, sans-serif;
     --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
 
-    --sidebar-background: 208 72% 10%;
-    --sidebar-foreground: 40 53% 81%;
-    --sidebar-primary: 39 48% 57%;
-    --sidebar-primary-foreground: 208 72% 10%;
-    --sidebar-accent: 208 62% 16%;
+    --sidebar-background: 193 82% 18%;
+    --sidebar-foreground: 0 0% 100%;
+    --sidebar-primary: 163 89% 43%;
+    --sidebar-primary-foreground: 193 82% 12%;
+    --sidebar-accent: 193 71% 24%;
     --sidebar-accent-foreground: 0 0% 98%;
-    --sidebar-border: 208 48% 20%;
-    --sidebar-ring: 39 48% 57%;
+    --sidebar-border: 193 48% 27%;
+    --sidebar-ring: 163 89% 43%;
   }
 }
 
@@ -78,7 +78,7 @@
 
   h1, h2, h3, h4, h5, h6 {
     @apply font-heading;
-    letter-spacing: -0.02em;
+    letter-spacing: -0.03em;
   }
 
   [dir="rtl"] h1,
@@ -92,13 +92,13 @@
   }
 
   ::selection {
-    background-color: hsl(var(--gold) / 0.25);
+    background-color: hsl(var(--gold) / 0.2);
   }
 
   :focus-visible {
-    outline: 2px solid hsl(var(--blue));
+    outline: 2px solid hsl(var(--gold));
     outline-offset: 2px;
-    border-radius: 2px;
+    border-radius: 4px;
   }
 }
 
@@ -108,23 +108,23 @@
   }
 
   .container-wide {
-    @apply mx-auto w-full max-w-[1280px] container-px;
+    @apply mx-auto w-full max-w-[1240px] container-px;
   }
 
   .eyebrow {
-    @apply inline-flex items-center gap-2 text-[13px] font-semibold uppercase tracking-[0.18em] text-gold;
+    @apply inline-flex items-center gap-2 text-[12px] font-semibold uppercase tracking-[0.16em] text-navy;
   }
 
   .heading-xl {
     @apply font-heading font-bold text-ink;
-    font-size: clamp(2.5rem, 6vw, 4.5rem);
-    line-height: 1.05;
+    font-size: clamp(2.6rem, 6vw, 4.9rem);
+    line-height: 0.98;
   }
 
   .heading-lg {
     @apply font-heading font-bold text-ink;
-    font-size: clamp(2rem, 4.5vw, 3rem);
-    line-height: 1.1;
+    font-size: clamp(2rem, 4.5vw, 3.35rem);
+    line-height: 1.05;
   }
 
   .heading-md {
@@ -138,19 +138,15 @@
   }
 
   .link-underline {
-    @apply relative inline-flex items-center gap-1.5 font-medium text-blue transition-colors hover:text-navy;
+    @apply relative inline-flex items-center gap-1.5 font-medium text-navy transition-colors hover:opacity-70;
   }
 
   .card-premium {
-    @apply rounded-2xl border border-border bg-card shadow-[0_1px_3px_rgba(7,26,43,0.04)] transition-all duration-300;
-  }
-
-  .gold-ring {
-    box-shadow: 0 0 0 1px hsl(var(--gold)), 0 0 0 6px hsl(var(--navy) / 0.06);
+    @apply rounded-[22px] border border-border bg-card shadow-[0_10px_30px_rgba(13,35,44,0.05)] transition-all duration-300;
   }
 
   .focus-ring {
-    @apply focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-blue focus-visible:ring-offset-2 focus-visible:ring-offset-background;
+    @apply focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-gold focus-visible:ring-offset-2 focus-visible:ring-offset-background;
   }
 }
 
@@ -161,13 +157,273 @@
 
   .bg-grid-navy {
     background-image:
-      linear-gradient(to right, hsl(var(--navy) / 0.04) 1px, transparent 1px),
-      linear-gradient(to bottom, hsl(var(--navy) / 0.04) 1px, transparent 1px);
+      linear-gradient(to right, hsl(var(--navy) / 0.035) 1px, transparent 1px),
+      linear-gradient(to bottom, hsl(var(--navy) / 0.035) 1px, transparent 1px);
     background-size: 56px 56px;
   }
 
   .bg-radial-gold {
-    background: radial-gradient(circle at center, hsl(var(--gold) / 0.16) 0%, transparent 60%);
+    background: radial-gradient(circle at center, hsl(var(--gold) / 0.14) 0%, transparent 62%);
+  }
+}
+
+/* Dubai South inspired homepage language */
+.ds-hero {
+  position: relative;
+  overflow: hidden;
+  background:
+    radial-gradient(circle at 80% 12%, rgba(38, 235, 177, 0.12), transparent 24rem),
+    linear-gradient(180deg, #ffffff 0%, #f7f9f9 100%);
+  padding: 8rem 0 4.5rem;
+}
+
+.ds-hero::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: -170px;
+  width: 720px;
+  height: 300px;
+  transform: translateX(-50%);
+  border-radius: 999px;
+  background: rgba(16, 207, 155, 0.12);
+  filter: blur(80px);
+  pointer-events: none;
+}
+
+.ds-hero__inner {
+  position: relative;
+  z-index: 1;
+  display: grid;
+  grid-template-columns: minmax(0, 1.25fr) minmax(320px, 0.75fr);
+  gap: 3.5rem;
+  align-items: center;
+}
+
+.ds-kicker {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.65rem;
+  padding: 0.55rem 0.85rem;
+  border: 1px solid #dfe6e5;
+  border-radius: 999px;
+  background: rgba(255,255,255,0.9);
+  color: #173f48;
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+}
+
+.ds-kicker__dot {
+  width: 0.5rem;
+  height: 0.5rem;
+  border-radius: 999px;
+  background: #20dca3;
+  box-shadow: 0 0 0 5px rgba(32,220,163,0.12);
+}
+
+.ds-hero__title {
+  max-width: 820px;
+  margin-top: 1.2rem;
+  color: #132a31;
+  font-size: clamp(2.75rem, 6.1vw, 5.4rem);
+  font-weight: 700;
+  line-height: 0.98;
+  letter-spacing: -0.055em;
+}
+
+.ds-hero__description {
+  max-width: 720px;
+  margin-top: 1.35rem;
+  color: #58676d;
+  font-size: clamp(1rem, 1.4vw, 1.16rem);
+  line-height: 1.75;
+}
+
+.ds-hero__actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin-top: 1.6rem;
+}
+
+.ds-btn {
+  display: inline-flex;
+  min-height: 46px;
+  align-items: center;
+  justify-content: center;
+  gap: 0.55rem;
+  border-radius: 999px;
+  padding: 0.82rem 1.25rem;
+  font-size: 0.86rem;
+  font-weight: 700;
+  transition: transform 180ms ease, box-shadow 180ms ease, background 180ms ease;
+}
+
+.ds-btn:hover {
+  transform: translateY(-1px);
+}
+
+.ds-btn--primary,
+.ds-btn--card {
+  background: #0b5964;
+  color: #ffffff;
+  box-shadow: 0 10px 24px rgba(11, 89, 100, 0.16);
+}
+
+.ds-btn--primary:hover,
+.ds-btn--card:hover {
+  background: #083f48;
+}
+
+.ds-btn--ghost {
+  border: 1px solid #d9e2e1;
+  background: #ffffff;
+  color: #18353c;
+}
+
+.ds-trust-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.9rem 1.1rem;
+  margin-top: 1.5rem;
+  color: #264a52;
+  font-size: 0.77rem;
+  font-weight: 700;
+}
+
+.ds-trust-row span {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+}
+
+.ds-trust-row svg {
+  color: #13ba8c;
+}
+
+.ds-lead-card {
+  border: 1px solid #e1e7e6;
+  border-radius: 24px;
+  background: rgba(255,255,255,0.94);
+  padding: 1.35rem;
+  box-shadow: 0 24px 70px rgba(22, 47, 55, 0.10);
+}
+
+.ds-lead-card__topline {
+  color: #0b5964;
+  font-size: 0.66rem;
+  font-weight: 800;
+  letter-spacing: 0.11em;
+}
+
+.ds-lead-card h2 {
+  margin-top: 0.55rem;
+  color: #132a31;
+  font-size: clamp(1.35rem, 2.2vw, 1.8rem);
+  font-weight: 700;
+  line-height: 1.1;
+}
+
+.ds-lead-card p {
+  margin-top: 0.55rem;
+  color: #6b767b;
+  font-size: 0.87rem;
+  line-height: 1.55;
+}
+
+.ds-lead-card__grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0.55rem;
+  margin: 1rem 0;
+}
+
+.ds-field {
+  border: 1px solid #e6eceb;
+  border-radius: 999px;
+  background: #f8faf9;
+  padding: 0.72rem 0.9rem;
+  color: #4d5e63;
+  font-size: 0.75rem;
+  font-weight: 600;
+}
+
+.ds-btn--card {
+  width: 100%;
+}
+
+.image-showcase {
+  background: #ffffff;
+  padding: 1.25rem 0 5rem;
+}
+
+.image-showcase__frame {
+  display: flex;
+  min-height: 360px;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  border-radius: 28px;
+  background: #ffffff;
+}
+
+.image-showcase__image {
+  display: block;
+  width: 100%;
+  max-height: 680px;
+  object-fit: contain;
+  object-position: center;
+}
+
+@media (max-width: 900px) {
+  .ds-hero {
+    padding-top: 6.5rem;
+  }
+
+  .ds-hero__inner {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .ds-lead-card {
+    max-width: 620px;
+  }
+}
+
+@media (max-width: 640px) {
+  .ds-hero {
+    padding: 6rem 0 2.8rem;
+  }
+
+  .ds-hero__title {
+    font-size: clamp(2.35rem, 13vw, 3.5rem);
+  }
+
+  .ds-hero__actions {
+    flex-direction: column;
+  }
+
+  .ds-btn {
+    width: 100%;
+  }
+
+  .ds-trust-row {
+    display: grid;
+    gap: 0.7rem;
+  }
+
+  .ds-lead-card__grid {
+    grid-template-columns: 1fr;
+  }
+
+  .image-showcase {
+    padding-bottom: 3.5rem;
+  }
+
+  .image-showcase__frame {
+    min-height: 220px;
+    border-radius: 18px;
   }
 }
 
