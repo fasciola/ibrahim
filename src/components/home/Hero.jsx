@@ -18,6 +18,10 @@ const item = {
   show: { opacity: 1, y: 0, transition: spring },
 };
 
+const EN_HERO_TITLE = "Start Your Dubai Mainland Company with Expert Guidance";
+const EN_HERO_DESCRIPTION =
+  "Set up your Dubai Mainland company with practical guidance from Ibrahim, a business-setup specialist with experience supporting licensing services within Dubai’s economic department. From activity selection and legal structure to approvals, visas, office solutions and banking support, Ibrahim helps you move through each step with clarity and compliance.";
+
 function HighlightedDescription({ text }) {
   if (!text) return null;
 
@@ -42,8 +46,10 @@ function HighlightedDescription({ text }) {
 }
 
 export default function Hero() {
-  const { t, dir } = useLanguage();
+  const { t, dir, locale } = useLanguage();
   const h = t.hero;
+  const heroTitle = locale === "en" ? EN_HERO_TITLE : h?.title;
+  const heroDescription = locale === "en" ? EN_HERO_DESCRIPTION : h?.description;
 
   return (
     <section className="relative isolate flex min-h-[100svh] items-center overflow-hidden bg-white pt-24 pb-6 sm:pt-28 sm:pb-8 lg:pt-24 lg:pb-6">
@@ -71,14 +77,14 @@ export default function Hero() {
             variants={item}
             className="mt-4 max-w-4xl text-balance font-heading text-[clamp(2.3rem,4.4vw,4.65rem)] font-bold leading-[0.94] tracking-[-0.052em] text-slate-900"
           >
-            {h?.title || "Set Up Your Business in Dubai With Practical, First-Hand Guidance"}
+            {heroTitle || "Set Up Your Business in Dubai With Practical, First-Hand Guidance"}
           </motion.h1>
 
           <motion.p
             variants={item}
             className="mt-4 max-w-3xl text-[14px] leading-6 text-slate-600 sm:text-[15px] sm:leading-7 xl:max-w-2xl"
           >
-            <HighlightedDescription text={h?.description} />
+            <HighlightedDescription text={heroDescription} />
           </motion.p>
 
           <motion.div variants={item} className="mt-5 flex flex-wrap gap-3">
