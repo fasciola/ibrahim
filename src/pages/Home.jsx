@@ -2,6 +2,7 @@ import SEO from "@/components/seo/SEO";
 import JsonLd, { faqPageSchema } from "@/components/seo/JsonLd";
 import Hero from "@/components/home/Hero";
 import ExpertiseStrip from "@/components/home/ExpertiseStrip";
+import ImageShowcase from "@/components/home/ImageShowcase";
 import MainlandExpertiseSection from "@/components/home/MainlandExpertiseSection";
 import FormerDEDExperience from "@/components/home/FormerDEDExperience";
 import CloudKitchenAuthority from "@/components/home/CloudKitchenAuthority";
@@ -30,6 +31,7 @@ export default function Home() {
       <JsonLd id="home-faq" data={faqPageSchema(t.faqs.slice(0, 6))} />
       <Hero />
       <ExpertiseStrip />
+      <ImageShowcase />
       <MainlandExpertiseSection />
       <FormerDEDExperience />
       <CloudKitchenAuthority />
