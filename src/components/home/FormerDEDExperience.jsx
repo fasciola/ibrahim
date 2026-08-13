@@ -1,62 +1,44 @@
-import { Landmark, ShieldAlert, Award } from "lucide-react";
+import { Landmark, Award } from "lucide-react";
+import { motion } from "framer-motion";
 import { useLanguage } from "@/lib/i18n/LanguageContext";
+
+const spring = { type: "spring", stiffness: 400, damping: 28 };
 
 export default function FormerDEDExperience() {
   const { t } = useLanguage();
   const f = t.formerDED;
 
-  // Display only after written permission and approved brand asset are confirmed.
-  const showDetLogo = import.meta.env.VITE_SHOW_DET_LOGO === "true";
-
   return (
-    <section className="py-20 lg:py-24 bg-card border-y border-border">
-      <div className="container-wide">
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
-          <div className="lg:col-span-7">
-            <div className="inline-flex items-center gap-2 rounded-full border border-gold/30 bg-gold/10 px-3.5 py-1 text-xs font-bold uppercase tracking-wider text-gold">
-              <Award className="h-4 w-4" />
-              <span>{f?.heading || "Practical Insight from Previous DED Experience"}</span>
-            </div>
-            <h2 className="heading-lg mt-4 text-navy font-heading font-bold">
-              {f?.heading}
-            </h2>
-            <p className="body-lg mt-5 text-muted-ink leading-relaxed">
-              {f?.p1}
-            </p>
-            <p className="body-lg mt-4 text-muted-ink leading-relaxed">
-              {f?.p2}
-            </p>
-
-            <div className="mt-8 rounded-xl border border-navy/10 bg-cream/50 p-4 text-xs text-muted-ink flex items-start gap-3">
-              <ShieldAlert className="h-5 w-5 text-gold shrink-0 mt-0.5" />
-              <p className="leading-relaxed">{f?.disclaimer}</p>
-            </div>
+    <section className="border-y border-border bg-white py-20 lg:py-28">
+      <div className="container-wide grid items-center gap-10 lg:grid-cols-[1.15fr_0.85fr] lg:gap-16">
+        <div>
+          <div className="inline-flex items-center gap-2 rounded-full border border-emerald-200 bg-emerald-50 px-3 py-1.5 text-[11px] font-bold uppercase tracking-[0.12em] text-[#0B5964]">
+            <Award className="h-4 w-4" /> Previous DED Experience
           </div>
-
-          <div className="lg:col-span-5 flex flex-col items-center justify-center">
-            <div className="w-full max-w-md rounded-2xl border border-border bg-background p-8 text-center shadow-lg">
-              {showDetLogo ? (
-                // Display only after written permission and approved brand asset are confirmed.
-                <img
-                  src="/images/brand/det-logo-authorized.svg"
-                  alt="Dubai Department of Economy and Tourism logo"
-                  className="mx-auto h-20 w-auto object-contain"
-                />
-              ) : (
-                <div className="mx-auto flex h-20 w-20 items-center justify-center rounded-2xl bg-navy/10 text-navy">
-                  <Landmark className="h-10 w-10 text-gold" />
-                </div>
-              )}
-
-              <h3 className="mt-6 text-base font-bold text-navy font-heading">
-                {f?.logoBadgeText || "Previous professional experience within Dubai’s economic department"}
-              </h3>
-              <p className="mt-2 text-xs text-muted-ink leading-relaxed">
-                Practical licensing procedure knowledge applied to independent business setup consulting.
-              </p>
-            </div>
-          </div>
+          <h2 className="heading-lg mt-4 max-w-2xl text-navy">Practical Licensing Insight from Real Experience</h2>
+          <p className="mt-5 max-w-xl text-[15px] leading-7 text-muted-ink sm:text-base">
+            Ibrahim’s previous work within Dubai’s economic licensing environment gives clients practical insight into activities, documentation and approval requirements.
+          </p>
+          <p className="mt-4 max-w-xl text-xs leading-5 text-muted-ink/80">
+            Independent consultancy. Government approvals remain subject to the relevant authority’s requirements.
+          </p>
         </div>
+
+        <motion.div
+          whileHover={{ y: -4 }}
+          transition={spring}
+          className="rounded-[24px] border border-slate-200 bg-[#F8FAF9] p-7 shadow-[0_1px_2px_rgba(15,23,42,0.03),0_18px_50px_rgba(15,23,42,0.06)]"
+        >
+          <div className="flex h-14 w-14 items-center justify-center rounded-2xl bg-white text-[#0B5964] shadow-sm">
+            <Landmark className="h-7 w-7" />
+          </div>
+          <h3 className="mt-5 text-lg font-bold text-navy">
+            {f?.logoBadgeText || "Previous professional experience within Dubai’s economic department"}
+          </h3>
+          <p className="mt-2 text-sm leading-6 text-muted-ink">
+            Licensing knowledge applied to clearer, more confident setup decisions.
+          </p>
+        </motion.div>
       </div>
     </section>
   );
