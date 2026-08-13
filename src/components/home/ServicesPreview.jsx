@@ -1,44 +1,39 @@
 import { Link } from "react-router-dom";
-import { ArrowRight, Building2, Utensils, Store, UserCheck, CreditCard, ShieldCheck, RefreshCw, Landmark, Scale } from "lucide-react";
+import { ArrowRight, Building2, Utensils, Store } from "lucide-react";
 import SectionHeading from "@/components/ui/SectionHeading";
 import ServiceCard from "@/components/ui/ServiceCard";
 import { useLanguage } from "@/lib/i18n/LanguageContext";
 
-const ICONS = [
-  Building2,
-  Utensils,
-  Store,
-  UserCheck,
-  CreditCard,
-  ShieldCheck,
-  RefreshCw,
-  Landmark,
-  Scale,
-];
+const ICONS = [Building2, Utensils, Store];
 
 export default function ServicesPreview() {
   const { t } = useLanguage();
+  const cards = t.servicesPreview?.cards?.slice(0, 3) || [];
+
   return (
-    <section className="bg-card py-16 lg:py-24">
+    <section className="bg-white py-20 lg:py-28">
       <div className="container-wide">
-        <div className="flex flex-col items-start justify-between gap-6 sm:flex-row sm:items-end">
+        <div className="mx-auto max-w-2xl text-center">
           <SectionHeading
-            eyebrow={t.servicesPreview?.eyebrow || "SERVICES HIERARCHY"}
-            title={t.servicesPreview?.title || "Specialist UAE Setup Services"}
-            intro={t.servicesPreview?.intro}
+            eyebrow="Core Services"
+            title="Focused Support for Starting in Dubai"
+            intro="Start with the setup you actually need. Detailed support is available when you are ready to move forward."
           />
+        </div>
+
+        <div className="mt-12 grid gap-5 md:grid-cols-3">
+          {cards.map((card, i) => (
+            <ServiceCard key={card.title} icon={ICONS[i]} {...card} delay={i * 60} />
+          ))}
+        </div>
+
+        <div className="mt-10 text-center">
           <Link
             to="/services"
-            className="hidden shrink-0 items-center gap-1.5 font-semibold text-blue transition-colors hover:text-navy focus-ring sm:inline-flex"
+            className="focus-ring inline-flex h-11 items-center gap-2 rounded-full border border-slate-200 bg-white px-6 text-sm font-semibold text-navy shadow-sm transition hover:-translate-y-0.5 hover:shadow-md"
           >
-            {t.servicesPreview?.viewAll || "View All Services"}
-            <ArrowRight className="h-4 w-4 rtl:rotate-180" />
+            View All Services <ArrowRight className="h-4 w-4 rtl:rotate-180" />
           </Link>
-        </div>
-        <div className="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
-          {t.servicesPreview?.cards?.map((card, i) => (
-            <ServiceCard key={i} icon={ICONS[i % ICONS.length]} {...card} delay={i * 50} />
-          ))}
         </div>
       </div>
     </section>
