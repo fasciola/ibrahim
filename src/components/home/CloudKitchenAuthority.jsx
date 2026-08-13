@@ -1,94 +1,66 @@
 import { Link } from "react-router-dom";
-import { Utensils, ExternalLink, ArrowRight, Flame, Store, ShieldCheck, Truck, Layout, ChefHat, Sparkles } from "lucide-react";
+import { ExternalLink, ChefHat, ShieldCheck, Store, Truck } from "lucide-react";
+import { motion } from "framer-motion";
 import { useLanguage } from "@/lib/i18n/LanguageContext";
 
+const spring = { type: "spring", stiffness: 400, damping: 28 };
+const features = [
+  [ChefHat, "Food-business activity & licence guidance"],
+  [ShieldCheck, "Municipality and safety approvals"],
+  [Store, "Kitchen location and operational setup"],
+  [Truck, "Delivery-platform readiness"],
+];
+
 export default function CloudKitchenAuthority() {
-  const { t, dir } = useLanguage();
+  const { t } = useLanguage();
   const c = t.cloudKitchen;
 
-  const cardIcons = [
-    Utensils,
-    ChefHat,
-    Store,
-    Layout,
-    ShieldCheck,
-    Flame,
-    Truck,
-    Sparkles,
-  ];
-
   return (
-    <section className="py-20 lg:py-24 bg-gradient-to-b from-navy to-navy-secondary text-white">
+    <section className="bg-gradient-to-br from-[#073D46] via-[#0B5964] to-[#0A6971] py-20 text-white lg:py-28">
       <div className="container-wide">
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center border-b border-white/10 pb-12">
-          <div className="lg:col-span-8">
-            <div className="inline-flex items-center gap-2 rounded-full border border-gold/40 bg-gold/15 px-3.5 py-1 text-xs font-bold uppercase tracking-wider text-gold">
-              <ChefHat className="h-4 w-4" />
-              <span>{c?.subtitle || "Built from real operational experience, not theory"}</span>
-            </div>
-            <h2 className="heading-lg mt-4 text-white font-heading font-bold">
-              {c?.heading || "Specialist Cloud Kitchen and Food-Business Setup"}
-            </h2>
-            <p className="body-lg mt-4 text-slate-300 leading-relaxed max-w-2xl">
-              {c?.p1}
+        <div className="grid items-center gap-10 lg:grid-cols-[1.1fr_0.9fr] lg:gap-16">
+          <div>
+            <span className="inline-flex items-center gap-2 rounded-full border border-white/15 bg-white/10 px-3 py-1.5 text-[11px] font-bold uppercase tracking-[0.12em] text-emerald-200 backdrop-blur-md">
+              <ChefHat className="h-4 w-4" /> Cloud Kitchen Specialist
+            </span>
+            <h2 className="heading-lg mt-4 max-w-2xl text-white">Specialist Cloud Kitchen & Food-Business Setup</h2>
+            <p className="mt-5 max-w-xl text-[15px] leading-7 text-white/75 sm:text-base">
+              Ibrahim combines business-setup knowledge with real food-business experience to help founders move from licence to operation with fewer unknowns.
             </p>
-            <p className="body-lg mt-3 text-slate-300 leading-relaxed max-w-2xl">
-              {c?.p2}
-            </p>
-          </div>
 
-          <div className="lg:col-span-4 flex flex-col items-center lg:items-end">
-            <div className="rounded-2xl border border-white/15 bg-white/5 p-6 text-center backdrop-blur-md w-full max-w-sm">
-              <img
-                src="/images/brand/cks-logo.svg"
-                alt="Cloud Kitchen Setup logo"
-                className="mx-auto h-16 w-auto object-contain"
-              />
-              <span className="mt-4 block text-xs font-medium uppercase tracking-wider text-gold">
-                {c?.ledBy || "Founded and led by Ibrahim"}
-              </span>
-              <div className="mt-6 flex flex-col gap-3">
-                <a
-                  href={c?.cksUrl || "https://cloudkitchensetup.com/"}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="inline-flex h-11 items-center justify-center gap-2 rounded-full bg-gold px-5 text-sm font-semibold text-navy transition-all hover:bg-gold-light"
-                >
-                  <span>{c?.visitCKS || "Visit Cloud Kitchen Setup"}</span>
-                  <ExternalLink className="h-4 w-4" />
-                </a>
-                <Link
-                  to="/consultation"
-                  className="inline-flex h-11 items-center justify-center gap-2 rounded-full border border-white/20 bg-white/10 px-5 text-sm font-semibold text-white transition-all hover:bg-white/20"
-                >
-                  <span>{c?.bookConsultation || "Book a Cloud Kitchen Consultation"}</span>
-                </Link>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        {/* 8 Feature Cards */}
-        <div className="mt-14 grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-4">
-          {c?.cards?.map((card, idx) => {
-            const Icon = cardIcons[idx % cardIcons.length];
-            return (
-              <div
-                key={idx}
-                className="rounded-xl border border-white/10 bg-white/5 p-5 transition-all hover:border-gold/50 hover:bg-white/10"
+            <div className="mt-7 flex flex-wrap gap-3">
+              <a
+                href={c?.cksUrl || "https://cloudkitchensetup.com/"}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="focus-ring inline-flex h-11 items-center gap-2 rounded-full bg-emerald-300 px-5 text-sm font-bold text-[#073D46] transition hover:-translate-y-0.5"
               >
-                <div className="flex h-10 w-10 items-center justify-center rounded-lg bg-gold/20 text-gold">
-                  <Icon className="h-5 w-5" />
+                Visit Cloud Kitchen Setup <ExternalLink className="h-4 w-4" />
+              </a>
+              <Link
+                to="/consultation"
+                className="focus-ring inline-flex h-11 items-center rounded-full border border-white/20 bg-white/10 px-5 text-sm font-semibold text-white backdrop-blur-md transition hover:bg-white/15"
+              >
+                Book Consultation
+              </Link>
+            </div>
+          </div>
+
+          <motion.div
+            whileHover={{ y: -4 }}
+            transition={spring}
+            className="rounded-[28px] border border-white/15 bg-white/8 p-6 shadow-[0_24px_70px_rgba(0,0,0,0.18)] backdrop-blur-xl"
+          >
+            <img src="/images/brand/cks-logo.svg" alt="Cloud Kitchen Setup" className="h-12 w-auto object-contain" />
+            <div className="mt-6 grid gap-3 sm:grid-cols-2">
+              {features.map(([Icon, label]) => (
+                <div key={label} className="rounded-2xl border border-white/10 bg-white/7 p-4">
+                  <Icon className="h-5 w-5 text-emerald-300" />
+                  <p className="mt-3 text-sm font-medium leading-6 text-white/85">{label}</p>
                 </div>
-                <h3 className="mt-4 font-heading text-base font-semibold text-white">
-                  {card.title}
-                </h3>
-                <p className="mt-2 text-xs text-slate-300 leading-relaxed">
-                  {card.desc}
-                </p>
-              </div>
-            );
-          })}
+              ))}
+            </div>
+          </motion.div>
         </div>
       </div>
     </section>
