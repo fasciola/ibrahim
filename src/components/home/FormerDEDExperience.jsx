@@ -27,17 +27,27 @@ export default function FormerDEDExperience() {
         <motion.div
           whileHover={{ y: -4 }}
           transition={spring}
-          className="rounded-[24px] border border-slate-200 bg-[#F8FAF9] p-7 shadow-[0_1px_2px_rgba(15,23,42,0.03),0_18px_50px_rgba(15,23,42,0.06)]"
+          className="overflow-hidden rounded-[24px] border border-slate-200 bg-[#F8FAF9] shadow-[0_1px_2px_rgba(15,23,42,0.03),0_18px_50px_rgba(15,23,42,0.06)]"
         >
-          <div className="flex h-14 w-14 items-center justify-center rounded-2xl bg-white text-[#0B5964] shadow-sm">
-            <Landmark className="h-7 w-7" />
+          <div className="border-b border-slate-200 bg-white p-3 sm:p-4">
+            <img
+              src="/images/ibrahim%20certif.jpeg"
+              alt="Dubai Economy and Tourism certificate for outstanding performance"
+              className="block h-auto w-full rounded-xl object-contain"
+              loading="lazy"
+            />
           </div>
-          <h3 className="mt-5 text-lg font-bold text-navy">
-            {f?.logoBadgeText || "Previous professional experience within Dubai’s economic department"}
-          </h3>
-          <p className="mt-2 text-sm leading-6 text-muted-ink">
-            Licensing knowledge applied to clearer, more confident setup decisions.
-          </p>
+          <div className="p-7">
+            <div className="flex h-14 w-14 items-center justify-center rounded-2xl bg-white text-[#0B5964] shadow-sm">
+              <Landmark className="h-7 w-7" />
+            </div>
+            <h3 className="mt-5 text-lg font-bold text-navy">
+              {f?.logoBadgeText || "Previous professional experience within Dubai’s economic department"}
+            </h3>
+            <p className="mt-2 text-sm leading-6 text-muted-ink">
+              Licensing knowledge applied to clearer, more confident setup decisions.
+            </p>
+          </div>
         </motion.div>
       </div>
     </section>

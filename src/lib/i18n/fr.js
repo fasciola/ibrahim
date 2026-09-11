@@ -166,9 +166,8 @@ export const fr = {
     heading: "Connaissance des procédures. Expérience de dirigeant.",
     p1: "Ibrahim est spécialisé dans l'accompagnement des entrepreneurs à Dubaï. Son expérience préalable au sein des services de licence économique offre une vision claire des structures et exigences juridiques.",
     p2: "Son expertise est renforcée par son rôle de fondateur et PDG de Cloud Kitchen Setup, offrant une double perspective précieuse : maîtriser le processus administratif et gérer une entreprise réelle.",
-    profileName: "Ibrahim Mohamed Ali Ibrahim Idris",
     profileRole: "Spécialiste création d'entreprise Dubai Mainland",
-    profileTag1: "Fondateur & PDG — Cloud Kitchen Setup (CKS)",
+    profileTag1: "Propriétaire et PDG — Business Lab Business setup",
     profileTag2: "Expérience préalable licences DED",
   },
   audience: {

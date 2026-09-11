@@ -25,7 +25,7 @@ export default function AboutIbrahim() {
             <div className="mt-8 flex flex-wrap gap-3">
               <span className="inline-flex items-center gap-1.5 rounded-full border border-navy/15 bg-card px-4 py-2 text-xs font-semibold text-navy">
                 <Briefcase className="h-4 w-4 text-gold" />
-                {a?.profileTag1 || "Owner & CEO — Cloud Kitchen Setup"}
+                {a?.profileTag1 || "Owner & CEO — Business Lab Business setup"}
               </span>
               <span className="inline-flex items-center gap-1.5 rounded-full border border-navy/15 bg-card px-4 py-2 text-xs font-semibold text-navy">
                 <Award className="h-4 w-4 text-gold" />
@@ -48,21 +48,9 @@ export default function AboutIbrahim() {
             <div className="rounded-3xl border border-border bg-card p-8 shadow-xl text-center relative overflow-hidden">
               <div className="absolute top-0 right-0 h-32 w-32 bg-gold/10 rounded-full blur-2xl -z-10" />
 
-              <div className="mx-auto max-w-md overflow-hidden rounded-2xl border border-border bg-white shadow-[0_10px_36px_rgba(7,26,43,0.14)]">
-                <img
-                  src="/images/ibrahim%20certif.jpeg"
-                  alt="Certificate awarded to Ibrahim Mohamed Ali Ibrahim Idris"
-                  className="block h-auto w-full object-contain"
-                  loading="lazy"
-                />
-              </div>
-
-              <h3 className="mt-6 text-xl font-bold text-navy font-heading">
-                {a?.profileName || "Ibrahim Mohamed Ali Ibrahim Idris"}
-              </h3>
-              <p className="mt-1 text-sm font-semibold text-gold">
+              <h3 className="text-xl font-bold text-navy font-heading">
                 {a?.profileRole || "Dubai Mainland Business Setup Specialist"}
-              </p>
+              </h3>
 
               <div className="mt-6 border-t border-border pt-6 space-y-3 text-left rtl:text-right">
                 <div className="flex items-center gap-3 text-xs text-muted-ink">

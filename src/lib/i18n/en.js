@@ -166,9 +166,8 @@ export const en = {
     heading: "Government-Process Knowledge. Real Business Experience.",
     p1: "Ibrahim specialises in helping entrepreneurs establish Dubai Mainland companies with greater clarity and confidence. His previous experience within Dubai’s economic licensing environment provided valuable exposure to commercial activities, legal structures, documentation, licensing procedures and customer challenges.",
     p2: "His experience is strengthened by his role as an entrepreneur and the owner and CEO of Cloud Kitchen Setup. This combination allows him to advise clients from both perspectives: understanding the setup process and understanding what it takes to build and operate a real business.",
-    profileName: "Ibrahim Mohamed Ali Ibrahim Idris",
     profileRole: "Dubai Mainland Business Setup Specialist",
-    profileTag1: "Owner & CEO — Cloud Kitchen Setup (CKS)",
+    profileTag1: "Owner & CEO — Business Lab Business setup",
     profileTag2: "Former DED Licensing Experience",
   },
   audience: {
