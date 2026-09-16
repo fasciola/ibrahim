@@ -116,12 +116,29 @@ export default function Footer() {
           <p className="text-[13px] text-white/55">
             &copy; {year} {t.footer.copyright}
           </p>
-          <Link
-            to="/privacy-policy"
-            className="text-[13px] text-white/75 transition-colors hover:text-gold-light focus-ring"
-          >
-            {t.footer.privacyPolicy}
-          </Link>
+          <div className="flex flex-wrap items-center justify-center gap-5 sm:justify-end">
+            <a
+              href="https://4pillarsweb.online/"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Website by Four Pillars Web Design"
+              className="inline-flex items-center gap-2 text-[12px] text-white/55 transition-colors hover:text-gold-light focus-ring"
+            >
+              <span>Website by Four Pillars</span>
+              <img
+                src="https://4pillarsweb.online/logo.png"
+                alt="Four Pillars Web Design"
+                loading="lazy"
+                className="h-5 w-auto opacity-80"
+              />
+            </a>
+            <Link
+              to="/privacy-policy"
+              className="text-[13px] text-white/75 transition-colors hover:text-gold-light focus-ring"
+            >
+              {t.footer.privacyPolicy}
+            </Link>
+          </div>
         </div>
       </div>
     </footer>
